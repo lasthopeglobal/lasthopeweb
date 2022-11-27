@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Terms and Conditions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    <!-- styles import -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- materialize icons, fontawesome -->
+    <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+    <link type="text/css" href="/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.min.css">
+
+    <!-- import all the required fonts files  -->
+    <!-- not yet done all imports -->
+    <!-- icon fonts import -->
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            font-family: 'Teko', sans-serif;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Scroll To Top Button With Scroll Progress  -->
+    <div id="progress">
+        <span id="progress-value">
+            <i class="material-icons" title="return to top">arrow_upward</i>
+        </span>
+        <!-- <span id="progress-value">&#x1F815;</span> -->
+    </div>
+
+    <div class="navbar-fixed">
+        <nav class="yellow darken-2">
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo black-text">
+                    <!-- &nbsp; Last Hope Church -->
+                    <img src="/assets/img/logo.png" alt="brand-logo" id="logo" class="lhc-logo">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav" class="right hide-on-med-and-down">
+                    <li><a href="/" title="Home" class="black-text">Home</a></li>
+                    <li><a href="/pages/aboutus.html" class="black-text">About Us</a></li>
+                    <li><a href="/index.html#ministeries" class="black-text">Ministries</a></li>
+                    <li><a href="/index.html#events" class="black-text">Events</a></li>
+                    <li><a href="/pages/prayer.html" class="black-text">Prayer</a></li>
+                    <li><a href="/index.html#support" class="black-text">Support</a></li>
+                    <li><a href="#footer" class="black-text">Visit Us</a></li>
+                    <!-- dropdown-trigger -->
+                    <li>
+                        <a href="#" class="dropdown-trigger" data-target="more-options">
+                            <i class="material-icons black-text right">more_vert</i>
+                        </a>
+                    </li>
+                    <!-- darkmode button  -->
+                    <li>
+                        <a href="#" class="btn  btn-wages indigo"
+                            onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+                            title="Dark/light">Dark mode
+                            <i class="material-icons right">dark_mode</i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- dropdown menus -->
+                <ul id="more-options" class="dropdown-content">
+                    <li><a href="/pages/disclamer.html"  class="blue-text">Disclamer</a></li>
+                    <li><a href="/pages/privacy.html" class="blue-text">Privacy Policy</a></li>
+                    <li><a href="#" title="Current page" class="blue-text">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Here is the Mobile side navbar   -->
+    <ul class="sidenav" id="mobile-demo">
+        <!-- darkmode button  -->
+        <li>
+            <a href="#" class="btn  btn-wages indigo"
+                onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
+                title="Dark/light">Dark mode
+                <i class="material-icons right">dark_mode</i>
+            </a>
+        </li>
+        <li><a href="/pages/aboutus.html">About Us</a></li>
+        <li><a href="/index.html#ministries">Ministries</a></li>
+        <li><a href="/index.html#events">Events</a></li>
+        <li><a href="/pages/prayer.html">Prayer</a></li>
+        <li><a href="/index.html#support">Support</a></li>
+        <li><a href="#footer">Visit Us</a></li>
+        <li><a href="/pages/disclamer.html">Disclamer</a></li>
+        <li><a href="/pages/privacy.html">Privacy Policy</a></li>
+        <li><a href="#" title="Current page">Terms & Conditions</a></li>
+    </ul>
+
+
+<section class="container">
+    <h2><strong>Terms and Conditions</strong></h2>
+
+    <p>Welcome to Lasthopechurch!</p>
+    
+    <p>These terms and conditions outline the rules and regulations for the use of Last Hope Church's Website, located at lasthopechurch.org.</p>
+    
+    <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Lasthopechurch if you do not agree to take all of the terms and conditions stated on this page.</p>
+    
+    <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
+    
+    <h3><strong>Cookies</strong></h3>
+    
+    <p>We employ the use of cookies. By accessing Lasthopechurch, you agreed to use cookies in agreement with the Last Hope Church's Privacy Policy. </p>
+    
+    <p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
+    
+    <h3><strong>License</strong></h3>
+    
+    <p>Unless otherwise stated, Last Hope Church and/or its licensors own the intellectual property rights for all material on Lasthopechurch. All intellectual property rights are reserved. You may access this from Lasthopechurch for your own personal use subjected to restrictions set in these terms and conditions.</p>
+    
+    <p>You must not:</p>
+    <ul>
+        <li>Republish material from Lasthopechurch</li>
+        <li>Sell, rent or sub-license material from Lasthopechurch</li>
+        <li>Reproduce, duplicate or copy material from Lasthopechurch</li>
+        <li>Redistribute content from Lasthopechurch</li>
+    </ul>
+    
+    
+    <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Last Hope Church does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Last Hope Church,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Last Hope Church shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+    
+    <p>Last Hope Church reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+    
+    <p>You warrant and represent that:</p>
+    
+    <ul>
+        <li>You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;</li>
+        <li>The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;</li>
+        <li>The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy</li>
+        <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
+    </ul>
+    
+    <p>You hereby grant Last Hope Church a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
+    
+    <h3><strong>Hyperlinking to our Content</strong></h3>
+    
+    <p>The following organizations may link to our Website without prior written approval:</p>
+    
+    <ul>
+        <li>Government agencies;</li>
+        <li>Search engines;</li>
+        <li>News organizations;</li>
+        <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and</li>
+        <li>System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</li>
+    </ul>
+    
+    <p>These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party’s site.</p>
+    
+    <p>We may consider and approve other link requests from the following types of organizations:</p>
+    
+    <ul>
+        <li>commonly-known consumer and/or business information sources;</li>
+        <li>dot.com community sites;</li>
+        <li>associations or other groups representing charities;</li>
+        <li>online directory distributors;</li>
+        <li>internet portals;</li>
+        <li>accounting, law and consulting firms; and</li>
+        <li>educational institutions and trade associations.</li>
+    </ul>
+    
+    <p>We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Last Hope Church; and (d) the link is in the context of general resource information.</p>
+    
+    <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.</p>
+    
+    <p>If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Last Hope Church. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+    
+    <p>Approved organizations may hyperlink to our Website as follows:</p>
+    
+    <ul>
+        <li>By use of our corporate name; or</li>
+        <li>By use of the uniform resource locator being linked to; or</li>
+        <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
+    </ul>
+    
+    <p>No use of Last Hope Church's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+    
+    <h3><strong>iFrames</strong></h3>
+    
+    <p>Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
+    
+    <h3><strong>Content Liability</strong></h3>
+    
+    <p>We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+    
+    <h3><strong>Your Privacy</strong></h3>
+    
+    <p>Please read Privacy Policy</p>
+    
+    <h3><strong>Reservation of Rights</strong></h3>
+    
+    <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
+    
+    <h3><strong>Removal of links from our website</strong></h3>
+    
+    <p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
+    
+    <p>We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.</p>
+    
+    <h3><strong>Disclaimer</strong></h3>
+    
+    <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
+    
+    <ul>
+        <li>limit or exclude our or your liability for death or personal injury;</li>
+        <li>limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+        <li>limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+        <li>exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+    </ul>
+    
+    <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
+    
+    <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+</section>
+
+
+    <!-- subscribe to your email  -->
+    <div class="blue lighten-5">
+        <section class="container">
+            <div class="row">
+                <div class="col s12 m3">
+                    <h6 class=" left-align"
+                        style="text-transform: uppercase; font-weight: bold; letter-spacing: 5px; font-size: larger;">
+                        Subscribe</h6>
+                    <p class=" left-align"
+                        style="text-transform: capitalize; font-weight: 300; font-style: italic; font-size: 16px; letter-spacing: 2px">
+                        to our newsletter</p>
+                </div>
+                <div class="input-field col s12 m5 ">
+                    <i class="material-icons prefix">email</i>
+                    <input id="icon_prefix" type="email" class="validate">
+                    <label for="icon_prefix">Your Vaild Email</label>
+                </div>
+                <div class="col s12 m2">
+                    <div class="right-align center" style="padding: 2rem;">
+                        <a href="#" class="btn btn-medium  waves  indigo lighten-2 black-text">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- footer starts here  -->
+
+    <footer class="page-footer yellow darken-2">
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="col l3 s12">
+                    <!-- <h3 class="black-text">About Church</h3> -->
+                    <h5 class="black-text">About the Church</h5>
+                    <p class="black-text text-lighten-1">
+                        <!-- Last Hope Vision is to bring Hope for the Hopeless humanity -->
+                        Last Hope is a contemporary church led by Pastor Noel and Marceline Lewis. Our vision and
+                        mission is to establish God's kingdom across the earth.
+                    </p>
+                </div>
+                <!-- <div class="col l4 offset-l2 s12"> -->
+                <div class="col l3 s12">
+                    <h5 class="black-text">Quick Links</h5>
+                    <ul>
+                        <li><a class="blue-text" href="#!">Prayer Request Form</a></li>
+                        <hr>
+                        <li><a class="blue-text" href="#!">Support Us</a></li>
+                        <hr>
+                        <li><a class="blue-text" href="#!">Write Testimony</a></li>
+                        <hr>
+                        <li><a class="blue-text" href="#!">Our Vision & Minisions</a></li>
+                        <hr>
+                    </ul>
+                </div>
+                <div class="col l3 s12 black-text">
+                    <h5>Reach Us</h5>
+                    <p>Address: Shop Number C1 Bappa Sitaram Market, opposite SBI, Moregaon Talao, Nalasopara East,
+                        Maharashtra 401209</p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="black-text">Connect with us</h5>
+                    <ul style="display:flex; justify-content: left; align-items: center;">
+                        <!-- use flaticon for this  -->
+                        <li><a class="btn red btn-floating" href="https://www.youtube.com/c/LASTHOPEGLOBAL"
+                                target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a></li>&nbsp;&nbsp;
+                        <li><a class="btn pink btn-floating" href="https://www.instagram.com/lasthopeglobal/"
+                                target="_blank">
+                                <i class="fab fa-instagram"></i></a>
+                        </li>&nbsp;&nbsp;
+                        <li><a class="btn blue btn-floating" href="https://www.facebook.com/lasthope.church.5/"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="black-text">Contact us</h5>
+                    <ul class="black-text">
+                        <li>Call us :+910123456789</li>
+                        <a href="mailto:lasthopechurch@gmail.com"><u>Email:lasthopechurch@gmail.com</u></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright yellow darken-3">
+            <div class="container center black-text">
+                Copyright © 2022 <a href="#" class="purple-text"><u>Last Hope Church</u></a> &nbsp;
+                Created with <i class="material-icons red-text" style="font-size:15px ;">favorite</i> by <a
+                    class="purple-text" href="https://www.mrparuiweb.dev" target="_blank" rel="dofollow">Mr Parui
+                    Web</a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends here  -->
+
+
+    <!-- jquery import -->
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <!-- materialize js import -->
+    <script src="/js/materialize.min.js"></script>
+    <!-- custom js files  -->
+    <script src="/js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+</body>
+
+</html>

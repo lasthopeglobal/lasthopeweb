@@ -1,0 +1,148 @@
+/* #nav {
+    font-family: 'Roboto Slab', serif;
+} */
+/* .brand-logo{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+} */
+
+/* .material-icons{
+    font-size: inherit;
+} */
+
+.navbar {
+    font-family: 'Roboto Slab', serif;
+}
+
+section {
+    padding: 60px 0;
+}
+
+
+#logo {
+    padding-left: 11px;
+    /* padding-bottom: 2px; */
+    padding-right: 7px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+.lhc-logo {
+    width: 85px;
+    min-height: 50px;
+    height: 60px;
+    /* max-height: max-content; */
+}
+
+section.Ministries {
+    margin-top: 30px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+
+}
+
+.box-slider {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Scroll To Top Button With Scroll Progress  */
+html {
+    scroll-behavior: smooth;
+}
+
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #3f51b5;
+    /* color: #001a2e; */
+}
+
+/* dark mode css  */
+
+
+body {
+    background-color: #eee;
+    transition: color 1s ease, background-color 1s ease;
+}
+
+body.dark {
+    background-color: #202123;
+    color: #fff;
+}
+
+/* body.dark nav {
+    background-color: #26a69a;
+} */
+
+/* body.dark .btn {
+    background-color: #ee6f73;
+} */
+
+body.dark .card {
+    background-color: #212121;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+body.dark div .card .card-reveal {
+    background-color: #212121;
+    color: rgb(255, 255, 255);
+}
+
+body.dark section div.modal-content {
+    background-color: #212121;
+    color: rgb(255, 255, 255);
+}
+
+body.dark section div.modal-footer {
+    background-color: #212121;
+    color: rgb(255, 255, 255);
+}
+
+body.dark .divider {
+    opacity: 0.2;
+}
+
+body.dark .sidenav {
+    background-color: #2d2d31;
+}
+
+body.dark .sidenav li a:not(.subheader) {
+    color: #89b2f5;
+}
+
+body.dark .sidenav li a:not(.subheader):hover {
+    background-color: #3b4043;
+}
+
+body.dark .sidenav li a.subheader {
+    color: #9aa0a6;
+}
+
+body.dark .sidenav li a .material-icons {
+    color: #9aa0a6;
+}
+
+blockquote {
+    border-left: 8px solid #3f51b5 !important;
+}
