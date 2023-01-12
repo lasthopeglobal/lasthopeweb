@@ -1,3 +1,0 @@
-# lasthopeweb
-
-This is testing 
