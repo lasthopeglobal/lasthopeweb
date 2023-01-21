@@ -32,8 +32,28 @@ $(document).ready(function () {
 
   $('.materialboxed').materialbox();
 
+  //  for dark mode 
+  $('.light-dark-mode').on('click', lightDarkMode);
+  if(localStorage.getItem('dark-mode')){
+      document.body.classList.add('dark-mode');
+  }
 
 });
+
+
+//  for dark mode call function 
+function lightDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  if(element.classList.contains("dark-mode")){
+      localStorage.setItem('dark-mode',true);
+      M.toast({html: 'Dark Mode Enable!', classes: 'rounded'});
+  } else {
+      localStorage.removeItem('dark-mode');
+      M.toast({html: 'Dark Mode Disable!', classes: 'rounded'});
+  }
+}
+
 
 // $('.modal').modal();
 // $('.collapsible').collapsible();  
