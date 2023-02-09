@@ -91,62 +91,18 @@ body {
     transition: color 1s ease, background-color 1s ease;
 }
 
-body.dark {
-    background-color: #202123;
+
+/* Add the class "dark-mode" to the body when the dark mode button is clicked */
+body.dark-mode {
+    background-color: #2d2d2d;
     color: #fff;
 }
 
-/* body.dark nav {
-    background-color: #26a69a;
-} */
-
-/* body.dark .btn {
-    background-color: #ee6f73;
-} */
-
-body.dark .card {
+/* Add the class "dark-mode" to specific elements */
+.dark-mode .card {
     background-color: #212121;
-    /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
-body.dark div .card .card-reveal {
-    background-color: #212121;
-    color: rgb(255, 255, 255);
-}
-
-body.dark section div.modal-content {
-    background-color: #212121;
-    color: rgb(255, 255, 255);
-}
-
-body.dark section div.modal-footer {
-    background-color: #212121;
-    color: rgb(255, 255, 255);
-}
-
-body.dark .divider {
-    opacity: 0.2;
-}
-
-body.dark .sidenav {
-    background-color: #2d2d31;
-}
-
-body.dark .sidenav li a:not(.subheader) {
-    color: #89b2f5;
-}
-
-body.dark .sidenav li a:not(.subheader):hover {
-    background-color: #3b4043;
-}
-
-body.dark .sidenav li a.subheader {
-    color: #9aa0a6;
-}
-
-body.dark .sidenav li a .material-icons {
-    color: #9aa0a6;
-}
 
 blockquote {
     border-left: 8px solid #3f51b5 !important;
