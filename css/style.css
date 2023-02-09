@@ -18,20 +18,25 @@ section {
     padding: 60px 0;
 }
 
-
+/* 
 #logo {
     padding-left: 11px;
-    /* padding-bottom: 2px; */
+    padding-bottom: 2px;
     padding-right: 7px;
     margin-left: 10px;
     margin-top: 4px;
+} */
+
+#logo {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
+
 .lhc-logo {
-    width: 85px;
-    min-height: 50px;
+    min-height: 25px;
     height: 60px;
-    /* max-height: max-content; */
 }
 
 section.Ministries {
