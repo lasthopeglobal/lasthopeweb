@@ -2,12 +2,14 @@
 $(document).ready(function () {
   $(".sidenav").sidenav();
   $('select').formSelect();
-  $('.datepicker').datepicker({
-    autoClose: true,
-    format: "dd/mm/yyyy",
-    setDefaultDate: true,
-    // firstDay: 1,
-  });
+  $('.modal').modal();
+  // $('.timepicker').timepicker();
+  // $('.datepicker').datepicker({
+  //   autoClose: true,
+  //   format: "dd/mm/yyyy",
+  //   setDefaultDate: true,
+  //   // firstDay: 1,
+  // });
 
   $('input#first_name, input#middle_name,input#last_name,input#mobile_number,textarea#prayerreq ,textarea#address').characterCounter();
 
