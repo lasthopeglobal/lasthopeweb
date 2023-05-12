@@ -56,11 +56,13 @@
             <div class="nav-wrapper">
                 <a href="/" class="brand-logo black-text">
                     <!-- &nbsp; Last Hope Church -->
-                    <img src="../assets/navbar_logo/Frame trasnparent 2.png" alt="brand-logo" id="logo" class="lhc-logo">
+                    <img src="../assets/navbar_logo/Frame trasnparent 2.png" alt="brand-logo" id="logo"
+                        class="lhc-logo">
                 </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav" class="right hide-on-med-and-down">
-                    <li><a href="https://lasthopeglobal.github.io/lasthopeweb/" title="Home" class="black-text">Home</a></li>
+                    <li><a href="https://lasthopeglobal.github.io/lasthopeweb/" title="Home" class="black-text">Home</a>
+                    </li>
                     <li><a href="../pages/aboutus.html" class="black-text">About Us</a></li>
                     <li><a href="/lasthopeweb/#ministeries" class="black-text">Ministries</a></li>
                     <li><a href="/lasthopeweb/#events" class="black-text">Events</a></li>
@@ -75,17 +77,15 @@
                     </li>
                     <!-- darkmode button  -->
                     <li>
-                        <a href="#" class="btn  btn-wages indigo"
-                            onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                            title="Dark/light">Dark mode
-                            <i class="material-icons right">dark_mode</i>
+                        <a href="#" class="btn  btn-wages indigo light-dark-mode">Dark mode
+                            <i class="material-icons right ">brightness_4</i>
                         </a>
                     </li>
                 </ul>
                 <!-- dropdown menus -->
                 <ul id="more-options" class="dropdown-content">
-                    <li><a href="../pages/disclamer.html"  class="blue-text">Disclamer</a></li>
-                    <li><a href="../pages/privacy.html"  class="blue-text">Privacy Policy</a></li>
+                    <li><a href="../pages/disclamer.html" class="blue-text">Disclamer</a></li>
+                    <li><a href="../pages/privacy.html" class="blue-text">Privacy Policy</a></li>
                     <li><a href="../pages/tnc.html" class="blue-text">Terms & Conditions</a></li>
                 </ul>
             </div>
@@ -96,10 +96,8 @@
     <ul class="sidenav" id="mobile-demo">
         <!-- darkmode button  -->
         <li>
-            <a href="#" class="btn  btn-wages indigo"
-                onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                title="Dark/light">Dark mode
-                <i class="material-icons right">dark_mode</i>
+            <a href="#" class="btn  btn-wages indigo light-dark-mode">Dark mode
+                <i class="material-icons right ">brightness_4</i>
             </a>
         </li>
         <li><a href="../pages/aboutus.html">About Us</a></li>
@@ -114,12 +112,131 @@
     </ul>
 
 
-    <section class="container center-on-small-only">
+    <!-- <section class="container center-on-small-only">
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSf-c81mtMMpoNpniLUozFvT5RPDoQDQWCH6dgRM2Wr3GtdIrQ/viewform?embedded=true"
             width="100%" height="1205" frameborder="0" marginheight="0" marginwidth="0">
             Loading…
         </iframe>
+    </section>   -->
+
+    <section class="container center-on-small-only">
+        <div class="row">
+            <div class="cols s12">
+                <h2 class="indigo-text center"><b><u>Prayer Request Form</u></b>
+                    <!-- Modal Trigger -->
+                    <div class="btn btn-wages indigo modal-trigger" href="#help" title="help">
+                        <i class="material-icons">help_outline</i>
+                    </div>
+                </h2>
+                <!-- Modal Structure -->
+                <div id="help" class="modal">
+                    <div class="modal-content indigo-text">
+                        <h4>How to fill the Prayer request form </h4>
+                        <p>such as NAME, EMAILID,PHONE NUMBER, GENDER , PRAYER TOPIC and most important is your prayer
+                            request</p>
+                        <p>Our Spiritual Support Team would love to pray for you this week! Please complete the form
+                            below to submit your prayer request.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok Understand</a>
+                    </div>
+                </div>
+                <p>fill out all the <b>*</b> (required detials)</p>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="first_name" name="first_name" required type="text" class="validate" data-length="20">
+                        <label for="first_name">*Full Name</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="mobilenumber" type="number" class="validate" data-length="10" required
+                            name="mobilenumber">
+                        <label for="mobilenumber">*Mobile Number</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">10 Digit Number (not include
+                            +91 or 0)</span>
+                    </div>
+
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
+                            name="email">
+                        <label for="email">*Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
+                            name="email">
+                        <label for="email">*Your Conform Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <label for="">Selcet Gender </label>
+                            <select>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="not prefered">Prefered not to say</option>
+                            </select>
+                        </div>
+                        <div class="col l6 s12">
+                            <label for="">Prayer Topic</label>
+                            <select>
+                                <option value=""disabled selected>Select Topic</option>
+                                <option value="Addiction">Addiction</option>
+                                <option value="Anxiety">Anxiety</option>
+                                <option value="Children">Children</option>
+                                <option value="Depression">Depression</option>
+                                <option value="Family">Family</option>
+                                <option value="Finances">Finances</option>
+                                <option value="Grief">Grief</option>
+                                <option value="Healing">Healing</option>
+                                <option value="Loneliness">Loneliness</option>
+                                <option value="Marriage">Marriage</option>
+                                <option value="Peace">Peace</option>
+                                <option value="Personal Relationships">Personal Relationships</option>
+                                <option value="Salvation/New Faith">Salvation/New Faith</option>
+                                <option value="Education">School/College/Education</option>
+                                <option value="Suicide">Suicide</option>
+                                <option value="Unsaved">Unsaved family or friend</option>
+                                <option value="Work">Work</option>
+                                <option value="Other">Other (explain briefly in text area)</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">description</i>
+                        <!-- <i class="material-icons prefix">church</i> -->
+                        <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
+                            data-length="200" required></textarea>
+                        <label for="prayerreq">*Prayer request in Detail</label>
+                        <p style="font-size: 12px; text-align: justify;">
+                            your prayer request will be share with our last hope prayer members or support team volenters . to protect your privacy , we may remove sensetive information from your message before our volenters views it 
+                        </p>
+                    </div>
+
+                    <div class="center submitBtn">
+                        <button class="btn-large waves-effect btn-wages indigo " id="submit" type="submit"
+                            name="submit">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </section>
 
 
