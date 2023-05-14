@@ -144,96 +144,123 @@
                 </div>
                 <p>fill out all the <b>*</b> (required detials)</p>
 
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="first_name" name="first_name" required type="text" class="validate" data-length="20">
-                        <label for="first_name">*Full Name</label>
-                    </div>
-
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">phone</i>
-                        <input id="mobilenumber" type="number" class="validate" data-length="10" required
-                            name="mobilenumber">
-                        <label for="mobilenumber">*Mobile Number</label>
-                        <span class="helper-text" data-error="wrong" data-success="right">10 Digit Number (not include
-                            +91 or 0)</span>
-                    </div>
+                <form id="prayerreq">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="full_name" name="full_name" required type="text" class="validate"
+                                data-length="20">
+                            <label for="full_name">*Full Name</label>
+                        </div>
 
 
-                    <div class="input-field col s12">
+
+
+                        <!-- <div class="input-field col s12">
                         <i class="material-icons prefix">email</i>
                         <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
                             name="email">
                         <label for="email">*Email</label>
                         <span class="helper-text" data-error="wrong" data-success="right"></span>
-                    </div>
+                    </div> -->
 
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
-                            name="email">
-                        <label for="email">*Your Conform Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
-                    </div>
-
-                    <div class="row">
-                        <div class="col l6 s12">
-                            <label for="">Selcet Gender </label>
-                            <select>
-                                <option value="" disabled selected>Select Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="not prefered">Prefered not to say</option>
-                            </select>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
+                                name="email">
+                            <label for="email">*Your Conform Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right"></span>
                         </div>
-                        <div class="col l6 s12">
-                            <label for="">Prayer Topic</label>
-                            <select>
-                                <option value=""disabled selected>Select Topic</option>
-                                <option value="Addiction">Addiction</option>
-                                <option value="Anxiety">Anxiety</option>
-                                <option value="Children">Children</option>
-                                <option value="Depression">Depression</option>
-                                <option value="Family">Family</option>
-                                <option value="Finances">Finances</option>
-                                <option value="Grief">Grief</option>
-                                <option value="Healing">Healing</option>
-                                <option value="Loneliness">Loneliness</option>
-                                <option value="Marriage">Marriage</option>
-                                <option value="Peace">Peace</option>
-                                <option value="Personal Relationships">Personal Relationships</option>
-                                <option value="Salvation/New Faith">Salvation/New Faith</option>
-                                <option value="Education">School/College/Education</option>
-                                <option value="Suicide">Suicide</option>
-                                <option value="Unsaved">Unsaved family or friend</option>
-                                <option value="Work">Work</option>
-                                <option value="Other">Other (explain briefly in text area)</option>
-                            </select>
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="mobilenumber" type="number" class="validate" data-length="10" required
+                                name="mobilenumber">
+                            <label for="mobilenumber">*Mobile Number</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">10 Digit Number (not
+                                include +91 or 0)</span>
+                        </div>
+
+                        <div class="row">
+                            <div class="select col l6 s12">
+                                <label for="gender">Selcet Gender </label><br>
+                                <!-- <select name="gender">
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="notprefered">Prefered not to say</option>
+                                </select> -->
+                                
+                                    
+                                    <label>
+                                      <input class="with-gap" name="gender" type="radio"  />
+                                      <span><b> Male</b></span>
+                                    </label>
+
+                                    <label>
+                                      <input class="with-gap" name="gender" type="radio" />
+                                      <span><b> Female</b></span>
+                                    </label>
+
+                                    <label>
+                                      <input class="with-gap" name="gender" type="radio"  />
+                                      <span><b> Prefered not to say</b></span>
+                                    </label>
+                                
+                            </div>
+
+                           
+
+                            
+
+                            
+                            <!-- <div class="select col l6 s12">
+                                <label for="prayer_topic">Prayer Topic</label>
+                                <select name="prayer_topic">
+                                    <option value="">Select Topic</option>
+                                    <option value="Addiction">Addiction</option>
+                                    <option value="Anxiety">Anxiety</option>
+                                    <option value="Children">Children</option>
+                                    <option value="Depression">Depression</option>
+                                    <option value="Family">Family</option>
+                                    <option value="Finances">Finances</option>
+                                    <option value="Grief">Grief</option>
+                                    <option value="Healing">Healing</option>
+                                    <option value="Loneliness">Loneliness</option>
+                                    <option value="Marriage">Marriage</option>
+                                    <option value="Peace">Peace</option>
+                                    <option value="Personal Relationships">Personal Relationships</option>
+                                    <option value="Salvation/New Faith">Salvation/New Faith</option>
+                                    <option value="Education">School/College/Education</option>
+                                    <option value="Suicide">Suicide</option>
+                                    <option value="Unsaved">Unsaved family or friend</option>
+                                    <option value="Work">Work</option>
+                                    <option value="Other">Other (explain briefly in text area)</option>
+                                </select>
+                            </div> -->
+                        </div>
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">description</i>
+                            <!-- <i class="material-icons prefix">church</i> -->
+                            <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
+                                data-length="200" required></textarea>
+                            <label for="prayerreq">*Prayer request in Detail</label>
+                            <p style="font-size: 12px; text-align: justify;">
+                                your prayer request will be share with our last hope prayer members or support team
+                                volenters . to protect your privacy , we may remove sensetive information from your
+                                message before our volenters views it
+                            </p>
+                        </div>
+
+                        <div class="center submitBtn">
+                            <button class="btn-large waves-effect btn-wages indigo " id="submit" type="submit"
+                                name="submit">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
                         </div>
                     </div>
-
-
-
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">description</i>
-                        <!-- <i class="material-icons prefix">church</i> -->
-                        <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
-                            data-length="200" required></textarea>
-                        <label for="prayerreq">*Prayer request in Detail</label>
-                        <p style="font-size: 12px; text-align: justify;">
-                            your prayer request will be share with our last hope prayer members or support team volenters . to protect your privacy , we may remove sensetive information from your message before our volenters views it 
-                        </p>
-                    </div>
-
-                    <div class="center submitBtn">
-                        <button class="btn-large waves-effect btn-wages indigo " id="submit" type="submit"
-                            name="submit">Submit
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                </div>
-
+                </form>
 
             </div>
         </div>
@@ -284,7 +311,7 @@
                 <div class="col l3 s12">
                     <h5 class="black-text">Quick Links</h5>
                     <ul>
-                        <li><a class="blue-text" href="#!">Prayer Request Form</a></li>
+                        <li><a class="blue-text" href="/pages/newuser.html">Prayer Request Form</a></li>
                         <hr>
                         <li><a class="blue-text" href="#!">Support Us</a></li>
                         <hr>
@@ -348,6 +375,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+
+    <!-- supabase config  -->
+    <script>
+
+        const { createClient } = supabase
+
+        // just add the keys 
+        supabase = createClient("https://uryjsoflpaycebbdoijr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyeWpzb2ZscGF5Y2ViYmRvaWpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg5MDM4ODAsImV4cCI6MTk5NDQ3OTg4MH0.7SMduIi9AHCtV_FE1JYwLmw4XpmL6c49RvapSfh2qPE")
+
+        const form = document.querySelector("#prayerreq")
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault()
+
+            const prayerInput = form.querySelectorAll('input, select option, textarea')
+
+            let submision = {}
+
+            prayerInput.forEach(element => {
+                const { value, name } = element
+                if (value) {
+                    submision[name] = value
+                }
+            })
+
+            console.log(submision)
+
+            const { error, data } = await supabase.from('prayerreq').insert([submision], { returning: 'minimal' })
+            console.log(error, data)
+            // return onclick=submit();
+            // error handling 
+            if (error) {
+                alert('check again and try later')
+            } else {
+                alert('ok done')
+            }
+
+            // if (error){
+            //     // alert("lafada kiya hai bahi")
+            //     $('#submit').on('click', function(e){
+            //         // e.preventDefault();
+            //         // Open popup modal
+            //         $('#error').modal('open');
+            //       });
+            // }else{
+            //     // Add click event listener to submit button
+            //   $('#submit').on('click', function(e){
+            //     // e.preventDefault();
+            //     // Open popup modal
+            //     $('#Success').modal('open');
+            //   });
+            // }
+
+            // reset the full form 
+            prayerInput.forEach(element => element.value = '')
+        })
+
     </script>
 </body>
 
