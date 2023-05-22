@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Prayer Request Form</title>
+    <title>New User Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <!-- <link href="style.css" rel="stylesheet"> -->
@@ -75,10 +75,8 @@
                     </li>
                     <!-- darkmode button  -->
                     <li>
-                        <a href="#" class="btn  btn-wages indigo"
-                            onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                            title="Dark/light">Dark mode
-                            <i class="material-icons right">dark_mode</i>
+                        <a href="#" class="btn  btn-wages indigo light-dark-mode">Dark mode
+                            <i class="material-icons right ">brightness_4</i>
                         </a>
                     </li>
                 </ul>
@@ -96,17 +94,15 @@
     <ul class="sidenav" id="mobile-demo">
         <!-- darkmode button  -->
         <li>
-            <a href="#" class="btn  btn-wages indigo"
-                onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-                title="Dark/light">Dark mode
-                <i class="material-icons right">dark_mode</i>
+            <a href="#" class="btn  btn-wages indigo light-dark-mode">Dark mode
+                <i class="material-icons right ">brightness_4</i>
             </a>
         </li>
         <li><a href="../pages/aboutus.html">About Us</a></li>
         <li><a href="/lasthopeweb/#ministries">Ministries</a></li>
         <li><a href="/lasthopeweb/#events">Events</a></li>
         <li><a href="#" title="Current page">Prayer</a></li>
-        <li><a href="/lasthopeweb/#support">Support</a></li>
+        <li><a href="/lasthopeweb/index.html#support">Support</a></li>
         <li><a href="#footer">Visit Us</a></li>
         <li><a href="../pages/disclamer.html">Disclamer</a></li>
         <li><a href="../pages/privacy.html">Privacy Policy</a></li>
@@ -129,7 +125,7 @@
 
             <!-- Modal Structure -->
             <div id="help" class="modal">
-                <div class="modal-content">
+                <div class="modal-content indigo-text">
                     <h4>How to fill the new user form </h4>
                     <p>fill out all the <b>*</b> (required detials)</p>
                     <p>such as prayer service time, name , dob, phone number , email and most important is your prayer
@@ -144,30 +140,7 @@
 
             <!-- reaming to include capcha in form -->
             <form id="new_user_detials">
-                <!-- <div class="row">
-                date picker 
-                <div class="col l4 s12">
-                    <label for="date">*Date</label>
-                    <input type="text" id="datepicker" required>
-                </div>
-
-                <div class="col l4 s12">
-                    <select>
-                        <optgroup label="Morning-service" required>
-                            <option value="1">7:00 am</option>
-                            <option value="2">8:30 am</option>
-                            <option value="2">10:30 am</option>
-                        </optgroup>
-                        <optgroup label="Evening-service">
-                            <option value="3">5:00 pm</option>
-                        </optgroup>
-                        <optgroup label="online-service">
-                            <option value="3">7:00 pm</option>
-                        </optgroup>
-                    </select>
-                    <label>*Prayer meeting timing</label>
-                </div>
-            </div> -->
+            
 
                 <div class="row">
                     <div class="input-field col l4 s12">
