@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Testimony Form</title>
+    <title>All Testimony</title>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <!-- <link href="style.css" rel="stylesheet"> -->
@@ -111,13 +111,19 @@
         <li><a href="../pages/tnc.html">Terms & Conditions</a></li>
     </ul>
 
-   
 
+        <!-- Click to Submit Your Testimony -->
+        <div class="container">
+            <p class="flow-text center">Click here to submit Your Testimony &nbsp;
+                <a href="/pages/testimonyform.html" target="_blank" class="btn btn-medium  waves  indigo">Add Your testimony</a>
+            </p>
+        </div>
+           
 
     <section class="container center-on-small-only">
         <div class="row">
             <div class="cols s12">
-                <h2 class="indigo-text center"><b><u>Submit Your Testimony</u></b>
+                <h2 class="indigo-text center"><b><u>All Testimony</u></b>
                     <!-- Modal Trigger -->
                     <div class="btn btn-wages indigo modal-trigger" href="#help" title="help">
                         <i class="material-icons">help_outline</i>
@@ -136,126 +142,12 @@
                         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok Understand</a>
                     </div>
                 </div>
-                <p>fill out all the <b>*</b> (required detials)</p>
+               
 
-                <form id="prayerreq">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="full_name" name="full_name" required type="text" class="validate"
-                                data-length="20">
-                            <label for="full_name">*Full Name</label>
-                        </div>
+                <!-- here will all testimony will display with images after the manual approval -->
 
-
-
-
-                        <!-- <div class="input-field col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
-                            name="email">
-                        <label for="email">*Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
-                    </div> -->
-
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">email</i>
-                            <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
-                                name="email">
-                            <label for="email">*Your Conform Email</label>
-                            <span class="helper-text" data-error="wrong" data-success="right"></span>
-                        </div>
-
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">phone</i>
-                            <input id="mobilenumber" type="number" class="validate" data-length="10" required
-                                name="mobilenumber">
-                            <label for="mobilenumber">*Mobile Number</label>
-                            <span class="helper-text" data-error="wrong" data-success="right">10 Digit Number (not
-                                include +91 or 0)</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="select col l6 s12">
-                                <label for="gender">Selcet Gender </label><br>
-                                <!-- <select name="gender">
-                                    <option value="" disabled selected>Select Gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="notprefered">Prefered not to say</option>
-                                </select> -->
-                                
-                                    
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio"  />
-                                      <span><b> Male</b></span>
-                                    </label>
-
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio" />
-                                      <span><b> Female</b></span>
-                                    </label>
-
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio"  />
-                                      <span><b> Prefered not to say</b></span>
-                                    </label>
-                                
-                            </div>
-
-                           
-
-                            
-
-                            
-                            <!-- <div class="select col l6 s12">
-                                <label for="prayer_topic">Prayer Topic</label>
-                                <select name="prayer_topic">
-                                    <option value="">Select Topic</option>
-                                    <option value="Addiction">Addiction</option>
-                                    <option value="Anxiety">Anxiety</option>
-                                    <option value="Children">Children</option>
-                                    <option value="Depression">Depression</option>
-                                    <option value="Family">Family</option>
-                                    <option value="Finances">Finances</option>
-                                    <option value="Grief">Grief</option>
-                                    <option value="Healing">Healing</option>
-                                    <option value="Loneliness">Loneliness</option>
-                                    <option value="Marriage">Marriage</option>
-                                    <option value="Peace">Peace</option>
-                                    <option value="Personal Relationships">Personal Relationships</option>
-                                    <option value="Salvation/New Faith">Salvation/New Faith</option>
-                                    <option value="Education">School/College/Education</option>
-                                    <option value="Suicide">Suicide</option>
-                                    <option value="Unsaved">Unsaved family or friend</option>
-                                    <option value="Work">Work</option>
-                                    <option value="Other">Other (explain briefly in text area)</option>
-                                </select>
-                            </div> -->
-                        </div>
-
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">description</i>
-                            <!-- <i class="material-icons prefix">church</i> -->
-                            <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
-                                data-length="200" required></textarea>
-                            <label for="prayerreq">*Prayer request in Detail</label>
-                            <p style="font-size: 12px; text-align: justify;">
-                                your prayer request will be share with our last hope prayer members or support team
-                                volenters . to protect your privacy , we may remove sensetive information from your
-                                message before our volenters views it
-                            </p>
-                        </div>
-
-                        <div class="center submitBtn">
-                            <button class="btn-large waves-effect btn-wages indigo " id="submit" type="submit"
-                                name="submit">Submit
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
+                <h6>coming soon... </h6>
+                
             </div>
         </div>
     </section>

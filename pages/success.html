@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Testimony Form</title>
+    <title>Successfull Done</title>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <!-- <link href="style.css" rel="stylesheet"> -->
@@ -111,154 +111,112 @@
         <li><a href="../pages/tnc.html">Terms & Conditions</a></li>
     </ul>
 
-   
 
+    <!-- <section class="container center-on-small-only">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSf-c81mtMMpoNpniLUozFvT5RPDoQDQWCH6dgRM2Wr3GtdIrQ/viewform?embedded=true"
+            width="100%" height="1205" frameborder="0" marginheight="0" marginwidth="0">
+            Loading…
+        </iframe>
+    </section>   -->
 
     <section class="container center-on-small-only">
-        <div class="row">
-            <div class="cols s12">
-                <h2 class="indigo-text center"><b><u>Submit Your Testimony</u></b>
-                    <!-- Modal Trigger -->
-                    <div class="btn btn-wages indigo modal-trigger" href="#help" title="help">
-                        <i class="material-icons">help_outline</i>
-                    </div>
-                </h2>
-                <!-- Modal Structure -->
-                <div id="help" class="modal">
-                    <div class="modal-content indigo-text">
-                        <h4>How to fill the Prayer request form </h4>
-                        <p>such as NAME, EMAILID,PHONE NUMBER, GENDER , PRAYER TOPIC and most important is your prayer
-                            request</p>
-                        <p>Our Spiritual Support Team would love to pray for you this week! Please complete the form
-                            below to submit your prayer request.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok Understand</a>
-                    </div>
-                </div>
-                <p>fill out all the <b>*</b> (required detials)</p>
-
-                <form id="prayerreq">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input id="full_name" name="full_name" required type="text" class="validate"
-                                data-length="20">
-                            <label for="full_name">*Full Name</label>
-                        </div>
-
-
-
-
-                        <!-- <div class="input-field col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
-                            name="email">
-                        <label for="email">*Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
-                    </div> -->
-
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">email</i>
-                            <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
-                                name="email">
-                            <label for="email">*Your Conform Email</label>
-                            <span class="helper-text" data-error="wrong" data-success="right"></span>
-                        </div>
-
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">phone</i>
-                            <input id="mobilenumber" type="number" class="validate" data-length="10" required
-                                name="mobilenumber">
-                            <label for="mobilenumber">*Mobile Number</label>
-                            <span class="helper-text" data-error="wrong" data-success="right">10 Digit Number (not
-                                include +91 or 0)</span>
-                        </div>
-
-                        <div class="row">
-                            <div class="select col l6 s12">
-                                <label for="gender">Selcet Gender </label><br>
-                                <!-- <select name="gender">
-                                    <option value="" disabled selected>Select Gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="notprefered">Prefered not to say</option>
-                                </select> -->
-                                
-                                    
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio"  />
-                                      <span><b> Male</b></span>
-                                    </label>
-
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio" />
-                                      <span><b> Female</b></span>
-                                    </label>
-
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio"  />
-                                      <span><b> Prefered not to say</b></span>
-                                    </label>
-                                
-                            </div>
-
-                           
-
-                            
-
-                            
-                            <!-- <div class="select col l6 s12">
-                                <label for="prayer_topic">Prayer Topic</label>
-                                <select name="prayer_topic">
-                                    <option value="">Select Topic</option>
-                                    <option value="Addiction">Addiction</option>
-                                    <option value="Anxiety">Anxiety</option>
-                                    <option value="Children">Children</option>
-                                    <option value="Depression">Depression</option>
-                                    <option value="Family">Family</option>
-                                    <option value="Finances">Finances</option>
-                                    <option value="Grief">Grief</option>
-                                    <option value="Healing">Healing</option>
-                                    <option value="Loneliness">Loneliness</option>
-                                    <option value="Marriage">Marriage</option>
-                                    <option value="Peace">Peace</option>
-                                    <option value="Personal Relationships">Personal Relationships</option>
-                                    <option value="Salvation/New Faith">Salvation/New Faith</option>
-                                    <option value="Education">School/College/Education</option>
-                                    <option value="Suicide">Suicide</option>
-                                    <option value="Unsaved">Unsaved family or friend</option>
-                                    <option value="Work">Work</option>
-                                    <option value="Other">Other (explain briefly in text area)</option>
-                                </select>
-                            </div> -->
-                        </div>
-
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">description</i>
-                            <!-- <i class="material-icons prefix">church</i> -->
-                            <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
-                                data-length="200" required></textarea>
-                            <label for="prayerreq">*Prayer request in Detail</label>
-                            <p style="font-size: 12px; text-align: justify;">
-                                your prayer request will be share with our last hope prayer members or support team
-                                volenters . to protect your privacy , we may remove sensetive information from your
-                                message before our volenters views it
-                            </p>
-                        </div>
-
-                        <div class="center submitBtn">
-                            <button class="btn-large waves-effect btn-wages indigo " id="submit" type="submit"
-                                name="submit">Submit
-                                <i class="material-icons right">send</i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
+        <div class="row form-done">
+            <!-- <div class="col s12">
+                <h3 class="center">
+                    Form Filled Successfully
+                    <hr>
+                </h3>
+            </div> -->
+            <div class="center col s12">
+                <h4 class="indigo-text">
+                    <i class="small material-icons">check_circle</i>
+                    You had fill the form Already
+                </h4>
+                <p>Thank You Very Much & God Bless You </p>
+            </div>
+            <div class="col s12 center">
+                <a href="/" class="btn btn-medium  waves  indigo ">Back To Home
+                    <i class="material-icons right">home</i></a>
+                <a href="#share" class="btn btn-medium  waves  indigo modal-trigger">Share the Word of God
+                    <i class="material-icons right">share</i></a>
             </div>
         </div>
     </section>
+
+
+    <!-- modal for share  -->
+
+    
+<!-- Modal Structure -->
+<div id="share" class="modal bottom-sheet">
+	<div class="modal-content">
+		<h5>Share The Word of God</h5>
+		<!-- <p>Via <a href="https://simplesharebuttons.com/html-share-buttons/" target="_blank">simplesharebuttons.com</a></p> -->
+		
+        <!-- ! must change all the href links from materializecss to main chruch site url -->
+		<div id="share-buttons">
+
+			<!-- Facebook -->
+			<a href="http://www.facebook.com/sharer.php?u=https://materializecss.com" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+			</a>
+			<!-- instagram  -->
+			<!-- <a href="http://www.instagram.com/sharer.php?u=https://materializecss.com" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/instagram.png" alt="Instagram" />
+			</a> -->
+
+			<!-- Twitter -->
+			<a href="https://twitter.com/share?url=https://materializecss.com&amp;text=Materialize%20Framework&amp;hashtags=css" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+			</a>
+
+			
+
+			<!-- Pinterest -->
+			<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
+					<img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
+			</a>
+
+			<!-- LinkedIn -->
+			<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://materializecss.com" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+			</a>
+
+			
+
+
+			<!-- Email -->
+			<a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://materializecss.com">
+					<img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+			</a>
+
+			<!-- Print -->
+			<a href="javascript:;" onclick="window.print()">
+					<img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+			</a>
+
+			<!-- Reddit -->
+			<a href="http://reddit.com/submit?url=https://materializecss.com&amp;title=Materialize Framework" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+			</a>
+
+
+			<!-- Tumblr-->
+			<a href="http://www.tumblr.com/share/link?url=https://materializecss.com&amp;title=Materialize Framework" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+			</a>
+
+
+		</div>
+		
+		
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
+	</div>
+</div>
+
 
 
 
@@ -346,7 +304,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
     </script>
     <script src="https://unpkg.com/@supabase/supabase-js"></script>
-  
+
+    <!-- supabase config  -->
+    <script>
+
+        const { createClient } = supabase
+
+        // just add the keys 
+        supabase = createClient("https://uryjsoflpaycebbdoijr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyeWpzb2ZscGF5Y2ViYmRvaWpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg5MDM4ODAsImV4cCI6MTk5NDQ3OTg4MH0.7SMduIi9AHCtV_FE1JYwLmw4XpmL6c49RvapSfh2qPE")
+
+        const form = document.querySelector("#prayerreq")
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault()
+
+            const prayerInput = form.querySelectorAll('input, select option, textarea')
+
+            let submision = {}
+
+            prayerInput.forEach(element => {
+                const { value, name } = element
+                if (value) {
+                    submision[name] = value
+                }
+            })
+
+            console.log(submision)
+
+            const { error, data } = await supabase.from('prayerreq').insert([submision], { returning: 'minimal' })
+            console.log(error, data)
+            // return onclick=submit();
+            // error handling 
+            if (error) {
+                alert('check again and try later')
+            } else {
+                alert('ok done')
+            }
+
+            // if (error){
+            //     // alert("lafada kiya hai bahi")
+            //     $('#submit').on('click', function(e){
+            //         // e.preventDefault();
+            //         // Open popup modal
+            //         $('#error').modal('open');
+            //       });
+            // }else{
+            //     // Add click event listener to submit button
+            //   $('#submit').on('click', function(e){
+            //     // e.preventDefault();
+            //     // Open popup modal
+            //     $('#Success').modal('open');
+            //   });
+            // }
+
+            // reset the full form 
+            prayerInput.forEach(element => element.value = '')
+        })
+
+    </script>
 </body>
 
 </html>
