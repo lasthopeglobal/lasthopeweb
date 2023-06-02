@@ -29,6 +29,8 @@ form.addEventListener('submit', async (event) => {
         alert('check again and try later')
     } else {
         alert('ok done')    
+        // return the html tags 
+        // return 'M.toast({html: "I am a toast"})'
     }
 
     // if (error){
@@ -49,4 +51,8 @@ form.addEventListener('submit', async (event) => {
  
     // reset the full form 
     prayerInput.forEach(element => element.value = '')
+
+
+    // Redirect to a new page
+    window.location.href = "http://127.0.0.1:5500/pages/success.html";
 })
