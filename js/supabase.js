@@ -33,26 +33,11 @@ form.addEventListener('submit', async (event) => {
         // return 'M.toast({html: "I am a toast"})'
     }
 
-    // if (error){
-    //     // alert("lafada kiya hai bahi")
-    //     $('#submit').on('click', function(e){
-    //         // e.preventDefault();
-    //         // Open popup modal
-    //         $('#error').modal('open');
-    //       });
-    // }else{
-    //     // Add click event listener to submit button
-    //   $('#submit').on('click', function(e){
-    //     // e.preventDefault();
-    //     // Open popup modal
-    //     $('#Success').modal('open');
-    //   });
-    // }
- 
+
     // reset the full form 
     prayerInput.forEach(element => element.value = '')
 
 
     // Redirect to a new page
-    window.location.href = "http://127.0.0.1:5500/pages/success.html";
+    window.location.href = "../pages/success.html";
 })
