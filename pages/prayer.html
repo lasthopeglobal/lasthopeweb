@@ -145,6 +145,7 @@
                 <p>fill out all the <b>*</b> (required detials)</p>
 
                 <form id="prayerreq">
+                <!-- <form action="pages/success.html" id="prayerreq"> -->
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
@@ -432,6 +433,11 @@
 
             // reset the full form 
             prayerInput.forEach(element => element.value = '')
+
+
+            // Redirect to a new page
+            // ! just update link after fully live 👇
+            window.location.href = "http://127.0.0.1:5500/pages/success.html";
         })
 
     </script>
