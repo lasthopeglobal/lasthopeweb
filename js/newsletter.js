@@ -17,12 +17,12 @@
       if (error) {
         alert('There was an error please try again')
       } else {
-        alert('thanks you for submit for newletter ')
+        // alert('thanks you for submit for newletter ')
         // Show the popup after 2 seconds
-        // setTimeout(() => {
-        //   const popup = document.getElementById('esub');
-        //   popup.style.display = 'block';
-        // }, 1000);
+        setTimeout(() => {
+          const popup = document.getElementById('esub');
+          popup.style.display = 'block';
+        }, 1000);
 
       }
 

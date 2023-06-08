@@ -111,23 +111,22 @@
         <li><a href="../pages/tnc.html">Terms & Conditions</a></li>
     </ul>
 
-
-    <!-- <section class="container center-on-small-only">
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSf-c81mtMMpoNpniLUozFvT5RPDoQDQWCH6dgRM2Wr3GtdIrQ/viewform?embedded=true"
-            width="100%" height="1205" frameborder="0" marginheight="0" marginwidth="0">
-            Loading…
-        </iframe>
-    </section>   -->
+  <!-- ! not working modal  -->
+        <!-- modal for newsletter sign up  -->
+        <div id="esub" class="modal">
+            <div class="modal-content">
+              <h5>Thank you</h5>
+              <p>Thank you for submitting your email and subscribing to the newsletter.</p>
+              <div class="modal-footer">
+                <a class="modal-close waves-effect waves-green btn-flat" href="#">
+                  <i class="material-icons">close</i>
+                </a>
+              </div>
+            </div>
+          </div>
 
     <section class="container center-on-small-only">
         <div class="row form-done">
-            <!-- <div class="col s12">
-                <h3 class="center">
-                    Form Filled Successfully
-                    <hr>
-                </h3>
-            </div> -->
             <div class="center col s12">
                 <h4 class="indigo-text">
                     <i class="small material-icons">check_circle</i>
@@ -144,11 +143,37 @@
         </div>
     </section>
 
-
-    <!-- modal for share  -->
-
+    <!-- subscribe to your email  -->
+        <section class="container center-on-small-only"> 
+            <div class="row">
+                <div class="col s12 m3">
+                    <h6 class=" left-align"
+                        style="text-transform: uppercase; font-weight: bold; letter-spacing: 5px; font-size: larger;">
+                        Subscribe</h6>
+                    <p class=" left-align"
+                        style="text-transform: capitalize; font-weight: 300; font-style: italic; font-size: 16px; letter-spacing: 2px">
+                        to our newsletter</p>
+                </div>
+                <form id="emailForm">
+                <div class="input-field col s12 m5 ">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" name="emails" id="emails" placeholder="Enter your email"
+                            required>
+                    </div>
+                    <div class="col s12 m2">
+                        <div class="right-align center" style="padding: 2rem;">
+                            <button class="btn btn-medium  btn-wages indigo" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     
-<!-- Modal Structure -->
+
+
+
+    <!-- * modal for share  -->
+<!-- Modal Structure for sharing page -->
 <div id="share" class="modal bottom-sheet">
 	<div class="modal-content">
 		<h5>Share The Word of God</h5>
@@ -206,11 +231,7 @@
 			<a href="http://www.tumblr.com/share/link?url=https://materializecss.com&amp;title=Materialize Framework" target="_blank">
 					<img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
 			</a>
-
-
 		</div>
-		
-		
 	</div>
 	<div class="modal-footer">
 		<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
@@ -291,77 +312,25 @@
     </footer>
     <!-- footer ends here  -->
 
-
+<!-- email newsletter confirmation script  -->
+<script src="https://unpkg.com/@supabase/supabase-js"></script>
+<script src="../js/newsletter.js"></script>
     <!-- jquery import -->
     <script src="../js/jquery-3.4.1.min.js"></script>
     <!-- materialize js import -->
     <script src="../js/materialize.min.js"></script>
     <!-- custom js files  -->
     <script src="../js/script.js"></script>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
     </script>
-    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <!-- <script src="https://unpkg.com/@supabase/supabase-js"></script> -->
 
-    <!-- supabase config  -->
-    <script>
 
-        const { createClient } = supabase
 
-        // just add the keys 
-        supabase = createClient("https://uryjsoflpaycebbdoijr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyeWpzb2ZscGF5Y2ViYmRvaWpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg5MDM4ODAsImV4cCI6MTk5NDQ3OTg4MH0.7SMduIi9AHCtV_FE1JYwLmw4XpmL6c49RvapSfh2qPE")
-
-        const form = document.querySelector("#prayerreq")
-
-        form.addEventListener('submit', async (event) => {
-            event.preventDefault()
-
-            const prayerInput = form.querySelectorAll('input, select option, textarea')
-
-            let submision = {}
-
-            prayerInput.forEach(element => {
-                const { value, name } = element
-                if (value) {
-                    submision[name] = value
-                }
-            })
-
-            console.log(submision)
-
-            const { error, data } = await supabase.from('prayerreq').insert([submision], { returning: 'minimal' })
-            console.log(error, data)
-            // return onclick=submit();
-            // error handling 
-            if (error) {
-                alert('check again and try later')
-            } else {
-                alert('ok done')
-            }
-
-            // if (error){
-            //     // alert("lafada kiya hai bahi")
-            //     $('#submit').on('click', function(e){
-            //         // e.preventDefault();
-            //         // Open popup modal
-            //         $('#error').modal('open');
-            //       });
-            // }else{
-            //     // Add click event listener to submit button
-            //   $('#submit').on('click', function(e){
-            //     // e.preventDefault();
-            //     // Open popup modal
-            //     $('#Success').modal('open');
-            //   });
-            // }
-
-            // reset the full form 
-            prayerInput.forEach(element => element.value = '')
-        })
-
-    </script>
 </body>
 
 </html>
