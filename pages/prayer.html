@@ -145,7 +145,7 @@
                 <p>fill out all the <b>*</b> (required detials)</p>
 
                 <form id="prayerreq">
-                <!-- <form action="pages/success.html" id="prayerreq"> -->
+                    <!-- <form action="pages/success.html" id="prayerreq"> -->
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
@@ -169,7 +169,7 @@
                             <i class="material-icons prefix">email</i>
                             <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
                                 name="email">
-                            <label for="email">*Your Conform Email</label>
+                            <label for="email">*Your Confirm Email</label>
                             <span class="helper-text" data-error="wrong" data-success="right"></span>
                         </div>
 
@@ -185,36 +185,39 @@
                         <div class="row">
                             <div class="select col l6 s12">
                                 <label for="gender">Selcet Gender </label><br>
-                                <!-- <select name="gender">
+                                <label>
+                                    <input type="radio" name="gender" value="male" id="male" class="with-gap" />
+                                    <span><b>Male</b></span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="gender" value="female" id="female" class="with-gap" />
+                                    <span><b>Female</b></span>
+                                </label>
+
+                                <!-- <label>
+                                      <input class="with-gap" name="gender" value="not to say" type="radio"/>
+                                      <span><b>Prefered not to say</b></span>
+                                    </label> -->
+
+                                <!-- <input type="radio" id="male" name="gender" value="male" >
+                                    <label for="male">Male</label>
+                            
+                                    <input type="radio" id="female" name="gender" value="female" required>
+                                    <label for="female">Female</label> -->
+                            </div>
+
+
+                            <!-- <select name="gender">
                                     <option value="" disabled selected>Select Gender</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="notprefered">Prefered not to say</option>
                                 </select> -->
-                                
-                                    
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio"  />
-                                      <span><b> Male</b></span>
-                                    </label>
 
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio" />
-                                      <span><b> Female</b></span>
-                                    </label>
 
-                                    <label>
-                                      <input class="with-gap" name="gender" type="radio"  />
-                                      <span><b> Prefered not to say</b></span>
-                                    </label>
-                                
-                            </div>
 
-                           
 
-                            
-
-                            
                             <!-- <div class="select col l6 s12">
                                 <label for="prayer_topic">Prayer Topic</label>
                                 <select name="prayer_topic">
@@ -435,9 +438,17 @@
             prayerInput.forEach(element => element.value = '')
 
 
-            // Redirect to a new page
-            // ! just update link after fully live 👇
-            window.location.href = "http://127.0.0.1:5500/pages/success.html";
+            //? Redirect to a new page
+            const successPagePath = "/pages/success.html";
+
+            window.location.href = successPagePath;
+
+            //  just update link after fully live 
+            // window.location.href = "http://127.0.0.1:5500/pages/success.html";
+
+
+
+
         })
 
     </script>
