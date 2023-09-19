@@ -173,7 +173,7 @@
                             <span class="helper-text" data-error="wrong" data-success="right"></span>
                         </div>
 
-                        <div class="input-field col s12">
+                        <div class="input-field col  s12">
                             <i class="material-icons prefix">phone</i>
                             <input id="mobilenumber" type="number" class="validate" data-length="10" required
                                 name="mobilenumber">
@@ -182,67 +182,46 @@
                                 include +91 or 0)</span>
                         </div>
 
-                        <div class="row">
-                            <div class="select col l6 s12">
-                                <label for="gender">Selcet Gender </label><br>
-                                <label>
-                                    <input type="radio" name="gender" value="male" id="male" class="with-gap" />
+                        <!--* at supabase table the value is always passing wrong data  -->
+                        <!--  <div class="col s12">
+                            <p><i class="material-icons prefix">groups_2</i>Select Gender</p>
+                            
+                            <p><label>
+                                    <input type="radio" name="gender" value="Male" id="Male" />
                                     <span><b>Male</b></span>
                                 </label>
-
-                                <label>
-                                    <input type="radio" name="gender" value="female" id="female" class="with-gap" />
+                            </p>
+                            <p><label>
+                                    <input type="radio" name="gender" value="Female" id="Female" />
                                     <span><b>Female</b></span>
                                 </label>
+                            </p>
+                        </div> -->
 
-                                <!-- <label>
+                       
+                            <!-- <div class="row">
+                                
+                                <label>
                                       <input class="with-gap" name="gender" value="not to say" type="radio"/>
                                       <span><b>Prefered not to say</b></span>
                                     </label> -->
 
-                                <!-- <input type="radio" id="male" name="gender" value="male" >
+                            <!-- <input type="radio" id="male" name="gender" value="male" >
                                     <label for="male">Male</label>
                             
                                     <input type="radio" id="female" name="gender" value="female" required>
-                                    <label for="female">Female</label> -->
-                            </div>
+                                    <label for="female">Female</label> 
+                               </div> -->
+                        
 
 
-                            <!-- <select name="gender">
+                        <!-- <select name="gender">
                                     <option value="" disabled selected>Select Gender</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="notprefered">Prefered not to say</option>
                                 </select> -->
 
-
-
-
-                            <!-- <div class="select col l6 s12">
-                                <label for="prayer_topic">Prayer Topic</label>
-                                <select name="prayer_topic">
-                                    <option value="">Select Topic</option>
-                                    <option value="Addiction">Addiction</option>
-                                    <option value="Anxiety">Anxiety</option>
-                                    <option value="Children">Children</option>
-                                    <option value="Depression">Depression</option>
-                                    <option value="Family">Family</option>
-                                    <option value="Finances">Finances</option>
-                                    <option value="Grief">Grief</option>
-                                    <option value="Healing">Healing</option>
-                                    <option value="Loneliness">Loneliness</option>
-                                    <option value="Marriage">Marriage</option>
-                                    <option value="Peace">Peace</option>
-                                    <option value="Personal Relationships">Personal Relationships</option>
-                                    <option value="Salvation/New Faith">Salvation/New Faith</option>
-                                    <option value="Education">School/College/Education</option>
-                                    <option value="Suicide">Suicide</option>
-                                    <option value="Unsaved">Unsaved family or friend</option>
-                                    <option value="Work">Work</option>
-                                    <option value="Other">Other (explain briefly in text area)</option>
-                                </select>
-                            </div> -->
-                        </div>
 
                         <div class="input-field col s12">
                             <i class="material-icons prefix">description</i>
@@ -271,31 +250,6 @@
     </section>
 
 
-    <!-- subscribe to your email  -->
-    <!-- <div class="blue lighten-5">
-        <section class="container">
-            <div class="row">
-                <div class="col s12 m3">
-                    <h6 class=" left-align"
-                        style="text-transform: uppercase; font-weight: bold; letter-spacing: 5px; font-size: larger;">
-                        Subscribe</h6>
-                    <p class=" left-align"
-                        style="text-transform: capitalize; font-weight: 300; font-style: italic; font-size: 16px; letter-spacing: 2px">
-                        to our newsletter</p>
-                </div>
-                <div class="input-field col s12 m5 ">
-                    <i class="material-icons prefix">email</i>
-                    <input id="icon_prefix" type="email" class="validate">
-                    <label for="icon_prefix">Your Vaild Email</label>
-                </div>
-                <div class="col s12 m2">
-                    <div class="right-align center" style="padding: 2rem;">
-                        <a href="#" class="btn btn-medium  waves  indigo lighten-2 black-text">Subscribe</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div> -->
 
     <!-- footer starts here  -->
 
@@ -395,7 +349,7 @@
         form.addEventListener('submit', async (event) => {
             event.preventDefault()
 
-            const prayerInput = form.querySelectorAll('input, select option, textarea')
+            const prayerInput = form.querySelectorAll('input, textarea')
 
             let submision = {}
 
