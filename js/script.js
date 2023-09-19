@@ -40,6 +40,7 @@ $(document).ready(function () {
       document.body.classList.add('dark-mode');
   }
 
+  $('.tooltipped').tooltip();
 });
 
 

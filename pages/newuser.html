@@ -56,11 +56,13 @@
             <div class="nav-wrapper">
                 <a href="https://lasthopeglobal.github.io/lasthopeweb/" class="brand-logo black-text">
                     <!-- &nbsp; Last Hope Church -->
-                    <img src="../assets/navbar_logo/Frame trasnparent 2.png" alt="brand-logo" id="logo" class="lhc-logo">
+                    <img src="../assets/navbar_logo/Frame trasnparent 2.png" alt="brand-logo" id="logo"
+                        class="lhc-logo">
                 </a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav" class="right hide-on-med-and-down">
-                    <li><a href="https://lasthopeglobal.github.io/lasthopeweb/" title="Home" class="black-text">Home</a></li>
+                    <li><a href="https://lasthopeglobal.github.io/lasthopeweb/" title="Home" class="black-text">Home</a>
+                    </li>
                     <li><a href="../pages/aboutus.html" class="black-text">About Us</a></li>
                     <li><a href="/lasthopeweb/#ministeries" class="black-text">Ministries</a></li>
                     <li><a href="/lasthopeweb/#events" class="black-text">Events</a></li>
@@ -130,6 +132,9 @@
                     <p>fill out all the <b>*</b> (required detials)</p>
                     <p>such as prayer service time, name , dob, phone number , email and most important is your prayer
                         request</p>
+                    <p><i class="material-icons prefix">schedule</i>
+                        on <b>selecting time </b> must only send the time from this following 7 am, 8:30 am,10:30 am,5
+                        pm & for online zoom 6 am & 7pm</p>
                     <!-- <p>if possible add some ss of the form to how to fill it </p> -->
                     <!-- <p>also add some faq like what is reference person and author ? </p> -->
                 </div>
@@ -140,8 +145,6 @@
 
             <!-- reaming to include capcha in form -->
             <form id="new_user_detials">
-            
-
                 <div class="row">
                     <div class="input-field col l4 s12">
                         <i class="material-icons prefix">account_circle</i>
@@ -183,26 +186,39 @@
                     </div>
                 </div>
 
+
                 <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">home</i>
-                        <textarea type="text" id="address" name="address" class="materialize-textarea"
-                            placeholder="include Wing no, flat no ,shop no / building no ,road,landmark,area name and city name, state and city pincode"
-                            data-length="200" required></textarea>
-                        <label>*Your Address</label>
+                    <div class="col l4 s12">
+                        <div class="input-field">
+                            <i class="material-icons prefix">supervisor_account</i>
+                            <input id="authorname" type="text" name="authorname" class="validate">
+                            <label for="authorname">Author name</label>
+                        </div>
                     </div>
 
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">description</i>
-                        <!-- <i class="material-icons prefix">church</i> -->
-                        <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
-                            data-length="500" required></textarea>
-                        <label for="prayerreq">*Prayer request in Detail</label>
+                    <div class="col l4 s12">
+                        <div class="input-field">
+                            <!-- <i class="material-icons prefix">people_alt</i> -->
+                            <i class="material-icons prefix">account_box</i>
+                            <input id="reference" name="reference" type="text" class="validate">
+                            <label for="reference">Reference If Any: By Whom ?</label>
+                        </div>
+                    </div>
+                    <div class="col l4 s12">
+                        <div class="input-field">
+                            <i class="material-icons prefix">schedule</i>
+                            <input class="timepicker" type="time" name="prayertime" required>
+                            <label for="time">*Select Time</label>
+                            <a class="btn btn-wages indigo tooltipped right" data-position="left"
+                                data-tooltip="click on help ? beside new user form"><i
+                                    class="material-icons">more</i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <!-- <div class="col l6 s12">
+                <!-- * user select there pic  -->
+                <!-- <div class="row">
+                    <div class="col l6 s12">
                         <div class="file-field input-field">
                             <div class="btn btn-wages indigo">
                                 <i class="material-icons left">folder</i>
@@ -215,80 +231,73 @@
                                 <span class="helper-text" data-error="wrong" data-success="right"></span>
                             </div>
                         </div>
-                    </div> -->
-                    <div class="col l6 s12">
-                        <div class="input-field">
-                            <i class="material-icons prefix">supervisor_account</i>
-                            <input id="authorname" type="text" name="authorname" class="validate">
-                            <label for="authorname">Author name</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col l6 s12">
-                        <div class="input-field">
-                            <i class="material-icons prefix">schedule</i>
-                            <input class="timepicker" type="time" name="prayertime" required>
-                            <label for="time">*select time - 7 am ,8:30 am,10:30 ,5 pm |online-6 am & 7pm</label>
-                        </div>
-                    </div>
-                    <div class="col l6 s12">
-                        <div class="input-field">
-                            <!-- <i class="material-icons prefix">people_alt</i> -->
-                            <i class="material-icons prefix">account_box</i>
-                            <input id="reference" name="reference" type="text" class="validate">
-                            <label for="reference">Reference If Any: By Whom ?</label>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- todo: ye main file mai lena hai "recaptcha included" -->
-                <!-- <div class="center">
-                    <div class="g-recaptcha" data-theme="light" data-size="normal" data-callback="captchaVerified"
-                        data-expired-callback="captchaExpired" data-sitekey="6LcJi7kkAAAAADN1q3VBU4DxLRmuYHoGUJWWD0dd">
                     </div>
                 </div> -->
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">home</i>
+                        <textarea type="text" id="address" name="address" class="materialize-textarea"
+                            placeholder="include Wing no, flat no ,shop no / building no ,road,landmark,area name and city name, state and city pincode"
+                            data-length="200" required></textarea>
+                        <label>*Your Address</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">description</i>
+                        <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
+                            data-length="500" required></textarea>
+                        <label for="prayerreq">*Prayer request in Detail</label>
+                    </div>
+                </div>
+
                 <!-- ? for checking the supabase  -->
                 <!-- * this below btn for with out the disabled opt  -->
-                <div class="center submitBtn">
+                <!-- <div class="center submitBtn">
                     <button class="btn-large waves-effect btn-wages indigo " id="submit" type="submit"
                         name="submit">Submit
                         <i class="material-icons right">send</i>
                     </button>
+                </div> -->
+
+
+                <div class="center">
+                    <div class="g-recaptcha" data-theme="light" data-size="normal" data-callback="captchaVerified"
+                        data-expired-callback="captchaExpired" data-sitekey="6LcJi7kkAAAAADN1q3VBU4DxLRmuYHoGUJWWD0dd">
+                    </div>
                 </div>
-                <!-- button with with disabled opt  -->
-                <!-- <div class="center submitBtn">
+
+                <!-- ! button with with disabled opt  -->
+                <div class="submitBtn">
                     <button class="btn-large waves-effect btn-wages indigo  disabled" id="submit" type="submit"
                         name="submit" disabled aria-disabled="true">Submit
                         <i class="material-icons right">send</i>
                     </button>
-                </div> -->
-        </form>
+                </div>
+            </form>
         </div>
     </section>
 
 
-<!-- Popup Modal -->
-<div id="error" class="modal">
-    <div class="modal-content">
-        <h4>hmmm 👀!</h4>
-        <p>some error occured</p>
+    <!-- Popup Modal -->
+    <!-- <div id="error" class="modal">
+        <div class="modal-content">
+            <h4>hmmm 👀!</h4>
+            <p>some error occured</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
     </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-</div>
-<div id="Success" class="modal">
-    <div class="modal-content">
-        <h4>Success! 👍</h4>
-        <p>Your form has been submitted.</p>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-</div>
+    <div id="Success" class="modal">
+        <div class="modal-content">
+            <h4>Success! 👍</h4>
+            <p>Your form has been submitted.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div> -->
 
 
     <!-- subscribe to your email  -->
@@ -318,7 +327,7 @@
     </div> -->
 
 
-       <!-- auto date picker  -->
+    <!-- auto date picker  -->
     <!-- <script>
         var date = new Date();
         var year = date.getFullYear();
@@ -328,8 +337,7 @@
         document.getElementById("datepicker").value = datePattern;
     </script> -->
 
-    <!-- recaptcha -->
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+
 
     <!-- footer starts here  -->
 
@@ -414,9 +422,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
     </script>
 
- <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> -->
- <script src="https://unpkg.com/@supabase/supabase-js"></script>
- <script src="../js/supabase.js"></script>
- 
+    <!-- recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script> -->
+    <script src="https://unpkg.com/@supabase/supabase-js"></script>
+    <script src="../js/supabase.js"></script>
+
+    <!-- Front-End Validation Callback Functions -->
+    <script>
+        // Verification callback function
+        function captchaVerified() {
+            var submitBtn = document.getElementById('submit');
+            submitBtn.removeAttribute('disabled');
+            submitBtn.removeAttribute('aria-disabled');
+            submitBtn.classList.remove('btn-outline-info', 'disabled');
+            submitBtn.classList.add('btn-info');
+        }
+        // Expiration callback function
+        function captchaExpired() {
+            grecaptcha.reset();
+        }
+    </script>
+
 </body>
+
 </html>
