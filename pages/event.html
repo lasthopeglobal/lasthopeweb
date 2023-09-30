@@ -1,13 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Page</title>
+    <title>Event & Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- favicon here  -->
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    <!-- styles import -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- materialize icons, fontawesome -->
+    <link type="text/css" href="../css/materialize.min.css" rel="stylesheet">
+    <link type="text/css" href="../css/fontawesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/all.min.css">
+
+    <!-- icon fonts import -->
+    <link rel="stylesheet" href="../css/material-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
-    <H1>
-        Coming Soon..
-    </H1>
+
+    <!-- Scroll To Top Button With Scroll Progress  -->
+    <div id="progress">
+        <span id="progress-value">
+            <i class="material-icons" title="return to top">arrow_upward</i>
+        </span>
+        <!-- <span id="progress-value">&#x1F815;</span> -->
+    </div>
+
+    <!-- nav starts here  -->
+    <div class="navbar-fixed">
+        <nav class="yellow darken-2">
+            <div class="nav-wrapper">
+                <a href="/" class="brand-logo black-text">
+                    <!-- &nbsp; Last Hope Church -->
+                    <img src="../assets/navbar_logo/Frame trasnparent 2.png" alt="brand-logo" id="logo"
+                        class="lhc-logo">
+
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav" class="right hide-on-med-and-down">
+                    <li><a href="/" title="Home" class="black-text">Home</a>
+                    </li>
+                    <li><a href="../pages/aboutus.html" class="black-text">About Us</a></li>
+                    <li><a href="../pages/ministeries.html" class="black-text">Ministries</a></li>
+                    <li><a href="#" title="Current page" class="black-text"><b>Event</b></a></li>
+                    <li><a href="../pages/prayer.html" class="black-text">Prayer</a></li>
+                    <li><a href="../pages/donate.html" class="black-text">Donate</a></li>
+                    <li><a href="#footer" class="black-text">Visit Us</a></li>
+                    <!-- dropdown-trigger -->
+                    <li>
+                        <a href="#" class="dropdown-trigger" data-target="more-options">
+                            <i class="material-icons black-text right">more_vert</i>
+                        </a>
+                    </li>
+                    <!-- darkmode button  -->
+                    <li>
+                        <a href="#" class="btn  btn-wages indigo light-dark-mode">Dark mode
+                            <i class="material-icons right ">brightness_4</i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- dropdown menus -->
+                <ul id="more-options" class="dropdown-content">
+                    <li><a href="../pages/disclamer.html" class="blue-text">Disclamer</a></li>
+                    <li><a href="../pages/privacy.html" class="blue-text">Privacy Policy</a></li>
+                    <li><a href="../pages/tnc.html" class="blue-text">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Here is the Mobile side navbar   -->
+    <ul class="sidenav" id="mobile-demo">
+        <!-- darkmode button  -->
+        <li>
+            <a href="#" class="btn  btn-wages indigo light-dark-mode">Dark mode
+                <i class="material-icons right ">brightness_4</i>
+            </a>
+        </li>
+        <li><a href="../pages/aboutus.html">About Us</a></li>
+        <li><a href="../pages/ministeries.html">Ministries</a></li>
+        <li><a href="#" title="Current page"><b>Events</b></a></li>
+        <li><a href="../pages/prayer.html">Prayer</a></li>
+        <li><a href="../pages/donate.html">Donate</a></li>
+        <li><a href="#footer">Visit Us</a></li>
+        <li><a href="../pages/disclamer.html">Disclamer</a></li>
+        <li><a href="../pages/privacy.html">Privacy Policy</a></li>
+        <li><a href="../pages/tnc.html">Terms & Conditions</a></li>
+    </ul>
+
+
+    <!-- main content for event  -->
+
+    <!-- Programs & events  -->
+    <section class="container">
+        <div class="row">
+            <h3 class="center" id="events">
+                <b>Regular Services and Upcoming Events</b>
+            </h3>
+            <hr>
+            <!-- sunday prayer  -->
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <span class="card-title">Sunday Prayers</span>
+                        <p>This is our <b>Sunday</b> Prayer schedule Timing</p>
+                        <table>
+                            <tr>
+                                <th>Morning Prayer</th>
+                            </tr>
+                            <tr>
+                                <!-- <th>No.</th> -->
+                                <th>Form</th>
+                                <th>To</th>
+                            </tr>
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>7:00 AM IST</td>
+                                <td>8:00 AM IST</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>2</td> -->
+                                <td>8:30 AM IST</td>
+                                <td>10:00 AM IST</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>3</td> -->
+                                <td>10:30 AM IST</td>
+                                <td>1:00 PM IST</td>
+                            </tr>
+                            <tr>
+                                <th>Evening Prayer</th>
+                            </tr>
+                            <tr>
+                                <!-- <td>4</td> -->
+                                <td>5:00 PM IST</td>
+                                <td>7:00 PM IST</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Friday prayer -->
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <span class="card-title">Fasting Prayer</span>
+                        <p>This is our Fasting Prayer schedule Timing on Each <b>Friday</b> </p>
+                        <table>
+                            <tr>
+                                <th>Form</th>
+                                <th>To</th>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM IST</td>
+                                <td>5:00 PM IST</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Online meetings Prayers  -->
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <span class="card-title">Online Prayers</span>
+                        <p>Our Online Prayer is Schedule on <b>Zoom app</b></p>
+                        <table>
+                            <tr>
+                                <th>Morning Prayer</th>
+                                <th>Evening Prayer</th>
+                            </tr>
+                            <tr>
+                                <td>6:00 AM IST</td>
+                                <td>7:00 PM IST</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- <p><b> To Know More Go to <a href="/pages/event.html">Event Page</b></a></p> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Todo: add all the Upcoming Events -->
+
+    <section class="container">
+        <h4 class="center" id="events">
+            <b>Upcoming Events</b>
+        </h4>
+        <hr>
+        <div class="row">
+            <!-- Friday prayer -->
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <span class="card-title">Fasting Prayer</span>
+                        <p>This is our Fasting Prayer schedule Timing on Each <b>Friday</b> </p>
+                        <table>
+                            <tr>
+                                <th>Form</th>
+                                <th>To</th>
+                            </tr>
+                            <tr>
+                                <td>11:00 AM IST</td>
+                                <td>5:00 PM IST</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sunday prayer  -->
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <span class="card-title">Sunday Prayers</span>
+                        <p>This is our <b>Sunday</b> Prayer schedule Timing</p>
+                        <table>
+                            <tr>
+                                <th>Morning Prayer</th>
+                            </tr>
+                            <tr>
+                                <!-- <th>No.</th> -->
+                                <th>Form</th>
+                                <th>To</th>
+                            </tr>
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>7:00 AM IST</td>
+                                <td>8:00 AM IST</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>2</td> -->
+                                <td>8:30 AM IST</td>
+                                <td>10:00 AM IST</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>3</td> -->
+                                <td>10:30 AM IST</td>
+                                <td>1:00 PM IST</td>
+                            </tr>
+                            <tr>
+                                <th>Evening Prayer</th>
+                            </tr>
+                            <tr>
+                                <!-- <td>4</td> -->
+                                <td>5:00 PM IST</td>
+                                <td>7:00 PM IST</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- * Popluar Events  -->
+
+    <section class="container">
+        <h3 class="center">
+            <b>Popular Events</b>
+        </h3>
+        <hr>
+        <a class="carousel-item" href="#one!">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel indigo">
+                        <span class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ab iusto eius magni rem libero sequi voluptate magnam labore ratione laborum consequatur illo, iste ipsum pariatur repellat, ullam quasi repellendus facere atque alias, eaque nihil.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div class="carousel">
+            <a class="carousel-item" href="#two!">
+                <div class="col s12 ">
+                    <div class="card horizontal yellow darken-2">
+                        <div class="card-stacked">
+                            <div class="card-content black-text">
+                                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="carousel-item" href="#three!">
+                <div class="col s12 ">
+                    <div class="card horizontal">
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="carousel-item" href="#four!">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel deep-purple darken-3">
+                            <span class="white-text">I am a very simple card. I am good at containing small bits of
+                                information.
+                                I am convenient because I require little markup to use effectively. I am similar to what
+                                is called a panel in other frameworks.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="carousel-item" href="#five!">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="card-panel indigo">
+                            <span class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, tempore. </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+
+
+<!-- Archives events & programs  -->
+
+    <section class="container">
+        <h4 class="center" id="events"><b>
+                Archives Events & Programs
+            </b></h4>
+        <hr>
+        <div class="col s12">
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <span class="card-title">Sunday Prayers</span>
+                        <p>This is our <b>Sunday</b> Prayer schedule Timing</p>
+                        <table>
+                            <tr>
+                                <th>Morning Prayer</th>
+                            </tr>
+                            <tr>
+                                <!-- <th>No.</th> -->
+                                <th>Form</th>
+                                <th>To</th>
+                            </tr>
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>7:00 AM IST</td>
+                                <td>8:00 AM IST</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>2</td> -->
+                                <td>8:30 AM IST</td>
+                                <td>10:00 AM IST</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>3</td> -->
+                                <td>10:30 AM IST</td>
+                                <td>1:00 PM IST</td>
+                            </tr>
+                            <tr>
+                                <th>Evening Prayer</th>
+                            </tr>
+                            <tr>
+                                <!-- <td>4</td> -->
+                                <td>5:00 PM IST</td>
+                                <td>7:00 PM IST</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12">
+            <div class="col s12 m6">
+                <div class="card z-depth-2">
+                    <div class="card-content">
+                        <span class="card-title">Sunday Prayers</span>
+                        <p>This is our <b>Sunday</b> Prayer schedule Timing</p>
+                        <table>
+                            <tr>
+                                <th>Morning Prayer</th>
+                            </tr>
+                            <tr>
+                                <!-- <th>No.</th> -->
+                                <th>Form</th>
+                                <th>To</th>
+                            </tr>
+                            <tr>
+                                <!-- <td>1</td> -->
+                                <td>7:00 AM IST</td>
+                                <td>8:00 AM IST</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>2</td> -->
+                                <td>8:30 AM IST</td>
+                                <td>10:00 AM IST</td>
+                            </tr>
+                            <tr>
+                                <!-- <td>3</td> -->
+                                <td>10:30 AM IST</td>
+                                <td>1:00 PM IST</td>
+                            </tr>
+                            <tr>
+                                <th>Evening Prayer</th>
+                            </tr>
+                            <tr>
+                                <!-- <td>4</td> -->
+                                <td>5:00 PM IST</td>
+                                <td>7:00 PM IST</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- footer  -->
+    <footer class="page-footer yellow darken-2">
+        <div class="container" id="footer">
+            <div class="row">
+                <div class="col l3 s12">
+                    <!-- <h3 class="black-text">About Church</h3> -->
+                    <h5 class="black-text">About the Church</h5>
+                    <p class="black-text text-lighten-1">
+                        <!-- Last Hope Vision is to bring Hope for the Hopeless humanity -->
+                        Last Hope is a contemporary church led by Pastor Noel and Marceline Lewis. Our vision and
+                        mission is to establish God's kingdom across the earth.
+                    </p>
+                    <!-- translate to hindi  -->
+                    <span id="google_translate_element" title="translate to your langauge"></span>
+                </div>
+                <!-- <div class="col l4 offset-l2 s12"> -->
+                <div class="col l3 s12">
+                    <h5 class="black-text">Quick Links</h5>
+                    <ul>
+                        <li><a class="blue-text" href="/pages/prayer.html">Prayer Request Form</a></li>
+                        <hr>
+                        <li><a class="blue-text" href="/yj/index.html">Christmas 2022</a></li>
+                        <hr>
+                        <li><a class="blue-text" href="/pages/testimonyform.html">Write Testimony</a></li>
+                        <hr>
+                        <li><a class="blue-text" href="/pages/aboutus.html">Our Vision & Minisions</a></li>
+                        <hr>
+                    </ul>
+                </div>
+                <div class="col l3 s12 black-text">
+                    <h5>Reach Us</h5>
+                    <p>Address: Shop Number C1 Bappa Sitaram Market, opposite SBI, Moregaon Talao, Nalasopara East,
+                        Maharashtra 401209</p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="black-text">Connect with us</h5>
+                    <ul style="display:flex; justify-content: left; align-items: center;">
+                        <!-- use flaticon for this  -->
+                        <li><a class="btn red btn-floating" href="https://www.youtube.com/c/LASTHOPEGLOBAL"
+                                target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a></li>&nbsp;&nbsp;
+                        <li><a class="btn pink btn-floating" href="https://www.instagram.com/lasthopeglobal/"
+                                target="_blank">
+                                <i class="fab fa-instagram"></i></a>
+                        </li>&nbsp;&nbsp;
+                        <li><a class="btn blue btn-floating" href="https://www.facebook.com/lasthope.church.5/"
+                                target="_blank">
+                                <i class="fab fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="black-text">Contact us</h5>
+                    <ul class="black-text">
+                        <li>Call us :+910123456789</li>
+                        <a href="mailto:lasthopechurch@gmail.com"><u>Email:lasthopechurch@gmail.com</u></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright yellow darken-3">
+            <div class="container center black-text">
+                Copyright © 2023 <a href="#" class="purple-text"><u>Last Hope Church</u></a> &nbsp;
+                Created with <i class="material-icons red-text" style="font-size:15px ;">favorite</i> by <a
+                    class="purple-text" href="https://www.mrparuiweb.dev" target="_blank" rel="dofollow">Mr Parui
+                    Web</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery import -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!-- materialize js import -->
+    <script src="../js/materialize.min.js"></script>
+    <!-- custom js files  -->
+    <script src="../js/script.js"></script>
+    <!-- google translate init  -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
+
 </html>
