@@ -37,6 +37,15 @@
             font-family: 'Teko', sans-serif;
             font-size: 50px;
         }
+
+        #page-header {
+            background-image: url(/yj/img/Y_J_2022_\(112\).jpg);
+            /* background-image: url(/assets/img/slide1.JPG); */
+            background-size: cover;
+            background-position: center 20%;
+            overflow: auto;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -65,7 +74,7 @@
                     </li>
                     <li><a href="../pages/aboutus.html" class="black-text">About Us</a></li>
                     <li><a href="../pages/ministeries.html" class="black-text">Ministries</a></li>
-                  <li><a href="../pages/event.html" class="black-text">Events</a></li>
+                    <li><a href="../pages/event.html" class="black-text">Events</a></li>
                     <li><a href="#" title="Current page" class="black-text"> <b>Prayer</b></a></li>
                     <li><a href="../pages/donate.html" class="black-text">Donate</a></li>
                     <li><a href="#footer" class="black-text">Visit Us</a></li>
@@ -120,30 +129,58 @@
         </iframe>
     </section>   -->
 
-    <section class="container center-on-small-only">
-        <div class="row">
-            <div class="cols s12">
-                <h2 class="indigo-text center"><b><u>Prayer Request Form</u></b>
-                    <!-- Modal Trigger -->
+
+    <header id="page-header">
+        <div class="container">
+            <h2 class="center"><b><u>Prayer Request Form</u></b>
+                <!-- Modal Trigger -->
+                <div class="btn btn-wages yellow darken-2 modal-trigger" href="#help" title="help">
+                    <i class="material-icons">help_outline</i>
+                </div>
+            </h2>
+        </div>
+    </header>
+
+    <!-- tabs changer  -->
+    <div class="tabs-wrapper">
+        <div id="tabs" class="center">
+            <div class="col s12 nav-content">
+                <ul class="tabs">
+                    <li class="tab"><a href="#tab1" class="active">Default</a></li>
+                    <li class="tab "><a href="#tab2">Friday</a></li>
+                    <li class="tab"><a href="#tab3">Sunday</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h5 class="center">fill out all the <b>*</b> (required detials)</h5>
+
+
+    <section class="container">
+        <!-- <section class="container center-on-small-only"> -->
+        <div class="cols s12">
+            <!-- <h2 class="indigo-text center"><b><u>Prayer Request Form</u></b>
+                    Modal Trigger
                     <div class="btn btn-wages indigo modal-trigger" href="#help" title="help">
                         <i class="material-icons">help_outline</i>
                     </div>
-                </h2>
-                <!-- Modal Structure -->
-                <div id="help" class="modal">
-                    <div class="modal-content indigo-text">
-                        <h4>How to fill the Prayer request form </h4>
-                        <p>such as NAME, EMAILID,PHONE NUMBER, GENDER , PRAYER TOPIC and most important is your prayer
-                            request</p>
-                        <p>Our Spiritual Support Team would love to pray for you this week! Please complete the form
-                            below to submit your prayer request.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok Understand</a>
-                    </div>
+                </h2> -->
+            <!-- Modal Structure -->
+            <div id="help" class="modal">
+                <div class="modal-content indigo-text">
+                    <h4>How to fill the Prayer request form </h4>
+                    <p>such as NAME, EMAILID,PHONE NUMBER, GENDER , PRAYER TOPIC and most important is your prayer
+                        request</p>
+                    <p>Our Spiritual Support Team would love to pray for you this week! Please complete the form
+                        below to submit your prayer request.</p>
                 </div>
-                <p>fill out all the <b>*</b> (required detials)</p>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok Understand</a>
+                </div>
+            </div>
 
+            <div id="tab1">
+                <p>This prayer form is default</p>
                 <form id="prayerreq">
                     <!-- <form action="pages/success.html" id="prayerreq"> -->
                     <div class="row">
@@ -153,17 +190,6 @@
                                 data-length="20">
                             <label for="full_name">*Full Name</label>
                         </div>
-
-
-
-
-                        <!-- <div class="input-field col s12">
-                        <i class="material-icons prefix">email</i>
-                        <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
-                            name="email">
-                        <label for="email">*Email</label>
-                        <span class="helper-text" data-error="wrong" data-success="right"></span>
-                    </div> -->
 
                         <div class="input-field col s12">
                             <i class="material-icons prefix">email</i>
@@ -198,21 +224,21 @@
                             </p>
                         </div> -->
 
-                       
-                            <!-- <div class="row">
+
+                        <!-- <div class="row">
                                 
                                 <label>
                                       <input class="with-gap" name="gender" value="not to say" type="radio"/>
                                       <span><b>Prefered not to say</b></span>
                                     </label> -->
 
-                            <!-- <input type="radio" id="male" name="gender" value="male" >
+                        <!-- <input type="radio" id="male" name="gender" value="male" >
                                     <label for="male">Male</label>
                             
                                     <input type="radio" id="female" name="gender" value="female" required>
                                     <label for="female">Female</label> 
                                </div> -->
-                        
+
 
 
                         <!-- <select name="gender">
@@ -244,9 +270,145 @@
                         </div>
                     </div>
                 </form>
+            </div>
 
+            <div id="tab2">
+                <p>This prayer form is Friday</p>
+                <form id="prayerreq_friday">
+                    <!-- <form action="pages/success.html" id="prayerreq"> -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="full_name" name="full_name" required type="text" class="validate"
+                                data-length="20">
+                            <label for="full_name">*Full Name</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
+                                name="email">
+                            <label for="email">*Your Confirm Email</label>
+                            <span class="helper-text" data-error="wrong" data-success="right"></span>
+                        </div>
+
+                        <div class="input-field col  s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="mobilenumber" type="number" class="validate" data-length="10" required
+                                name="mobilenumber">
+                            <label for="mobilenumber">*Mobile Number</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">10 Digit Number (not
+                                include +91 or 0)</span>
+                        </div>
+
+                        <!--* at supabase table the value is always passing wrong data  -->
+                        <!--  <div class="col s12">
+                            <p><i class="material-icons prefix">groups_2</i>Select Gender</p>
+                            
+                            <p><label>
+                                    <input type="radio" name="gender" value="Male" id="Male" />
+                                    <span><b>Male</b></span>
+                                </label>
+                            </p>
+                            <p><label>
+                                    <input type="radio" name="gender" value="Female" id="Female" />
+                                    <span><b>Female</b></span>
+                                </label>
+                            </p>
+                        </div> -->
+                        <!-- <div class="row">
+                                
+                                <label>
+                                      <input class="with-gap" name="gender" value="not to say" type="radio"/>
+                                      <span><b>Prefered not to say</b></span>
+                                    </label> -->
+                        <!-- <input type="radio" id="male" name="gender" value="male" >
+                                    <label for="male">Male</label>
+                            
+                                    <input type="radio" id="female" name="gender" value="female" required>
+                                    <label for="female">Female</label> 
+                               </div> -->
+                        <!-- <select name="gender">
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="notprefered">Prefered not to say</option>
+                            </select> -->
+
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">description</i>
+                            <!-- <i class="material-icons prefix">church</i> -->
+                            <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
+                                data-length="200" required></textarea>
+                            <label for="prayerreq">*Prayer request in Detail</label>
+                            <p style="font-size: 12px; text-align: justify;">
+                                your prayer request will be share with our last hope prayer members or support team
+                                volenters . to protect your privacy , we may remove sensetive information from your
+                                message before our volenters views it
+                            </p>
+                        </div>
+
+                        <div class="center submitBtn">
+                            <button class="btn-large waves-effect btn-wages indigo " id="submit" type="submit"
+                                name="submit">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
+
+        <div id="tab3">
+            <p>This prayer form is Sunday</p>
+            <form id="prayerreq_sunday">
+                <!-- <form action="pages/success.html" id="prayerreq"> -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="full_name" name="full_name" required type="text" class="validate" data-length="20">
+                        <label for="full_name">*Full Name</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate" placeholder="yourvaild@emailid.com"
+                            name="email">
+                        <label for="email">*Your Confirm Email</label>
+                        <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+
+                    <div class="input-field col  s12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="mobilenumber" type="number" class="validate" data-length="10" required
+                            name="mobilenumber">
+                        <label for="mobilenumber">*Mobile Number</label>
+                        <span class="helper-text" data-error="wrong" data-success="right">10 Digit Number (not
+                            include +91 or 0)</span>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">description</i>
+                        <!-- <i class="material-icons prefix">church</i> -->
+                        <textarea type="text" id="prayerreq" name="prayerreq" class="materialize-textarea"
+                            data-length="200" required></textarea>
+                        <label for="prayerreq">*Prayer request in Detail</label>
+                        <p style="font-size: 12px; text-align: justify;">
+                            your prayer request will be share with our last hope prayer members or support team
+                            volenters . to protect your privacy , we may remove sensetive information from your
+                            message before our volenters views it
+                        </p>
+                    </div>
+
+                    <div class="center submitBtn">
+                        <button class="btn-large waves-effect btn-wages indigo " id="submit" type="submit"
+                            name="submit">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </section>
 
 
@@ -336,12 +498,21 @@
     </script>
     <script src="https://unpkg.com/@supabase/supabase-js"></script>
 
-    <!-- supabase config  -->
-    <script>
-
+    <!-- <script>
         const { createClient } = supabase
 
-        // just add the keys 
+        supabase = createClient("https://uryjsoflpaycebbdoijr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyeWpzb2ZscGF5Y2ViYmRvaWpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg5MDM4ODAsImV4cCI6MTk5NDQ3OTg4MH0.7SMduIi9AHCtV_FE1JYwLmw4XpmL6c49RvapSfh2qPE")
+    </script> -->
+    <!-- js files recalled for prayers  -->
+    <script src="../js/prayers/default.js"></script>
+
+    <script src="../js/prayers/firday_prayer.js"></script>
+    <script src="../js/prayers/sunday_prayer.js"></script>
+
+    <!-- supabase config  -->
+    <!-- <script>
+
+        const { createClient } = supabase
         supabase = createClient("https://uryjsoflpaycebbdoijr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyeWpzb2ZscGF5Y2ViYmRvaWpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg5MDM4ODAsImV4cCI6MTk5NDQ3OTg4MH0.7SMduIi9AHCtV_FE1JYwLmw4XpmL6c49RvapSfh2qPE")
 
         const form = document.querySelector("#prayerreq")
@@ -364,33 +535,13 @@
 
             const { error, data } = await supabase.from('prayerreq').insert([submision], { returning: 'minimal' })
             console.log(error, data)
-            // return onclick=submit();
-            // error handling 
             if (error) {
                 alert('check again and try later')
             } else {
                 alert('ok done')
             }
-
-            // if (error){
-            //     // alert("lafada kiya hai bahi")
-            //     $('#submit').on('click', function(e){
-            //         // e.preventDefault();
-            //         // Open popup modal
-            //         $('#error').modal('open');
-            //       });
-            // }else{
-            //     // Add click event listener to submit button
-            //   $('#submit').on('click', function(e){
-            //     // e.preventDefault();
-            //     // Open popup modal
-            //     $('#Success').modal('open');
-            //   });
-            // }
-
             // reset the full form 
             prayerInput.forEach(element => element.value = '')
-
 
             //? Redirect to a new page
             const successPagePath = "/pages/success.html";
@@ -399,13 +550,8 @@
 
             //  just update link after fully live 
             // window.location.href = "http://127.0.0.1:5500/pages/success.html";
-
-
-
-
         })
-
-    </script>
+    </script> -->
 </body>
 
 </html>

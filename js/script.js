@@ -3,6 +3,7 @@ $(document).ready(function () {
   $(".sidenav").sidenav();
   $('select').formSelect();
   $('.modal').modal();
+  $('.tabs').tabs();
   // $('.timepicker').timepicker();
   // $('.datepicker').datepicker({
   //   autoClose: true,
