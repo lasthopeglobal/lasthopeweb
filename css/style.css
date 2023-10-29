@@ -99,6 +99,14 @@ body.dark-mode {
     background-color: #212121;
 }
 
+.dark-mode .sidenav {
+    background-color: #2d2d2d;
+}
+
+.dark-mode .sidenav a{
+    color: #ffffff;
+}
+
 
 blockquote {
     border-left: 8px solid #3f51b5 !important;
@@ -138,4 +146,17 @@ blockquote {
 	border: 0;
 	box-shadow: 0;
 	display: inline;
+}
+
+
+.parallax-container {
+    height: "600px";
+}
+/* .slider .slides li img{
+    max-width: 100% !important;
+    height: auto !important;
+} */
+
+img.responsive-img, video.responsive-video{
+    max-width: 85% !important;
 }

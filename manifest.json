@@ -1,8 +1,8 @@
 {
   "name": "Last Hope",
   "short_name": "LHC",
-  "theme_color": "#fbc02d",
-  "background_color": "#3f51b5",
+  "theme_color": "#151515",
+  "background_color": "#181818",
   "display": "standalone",
   "orientation": "portrait",
   "start_url": "./index.html",
