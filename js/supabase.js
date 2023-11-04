@@ -26,11 +26,9 @@ form.addEventListener('submit', async (event) => {
     // return onclick=submit();
     // error handling 
     if (error) {
-        alert('check again and try later')
+        alert('facing some issue in code')
     } else {
-        alert('ok done')    
-        // return the html tags 
-        // return 'M.toast({html: "I am a toast"})'
+        alert('Your Prayer is Accepted')
     }
 
 
