@@ -46,6 +46,30 @@
             overflow: auto;
             color: #fff;
         }
+
+        .tabs .tab a {
+            color: indigo;
+        }
+
+        .tabs .tab a.active {
+            color: indigo;
+        }
+
+        .tabs .tab a:hover {
+            color: indigo;
+        }
+
+        .tabs .tab a:focus {
+            background-color: rgba(0, 255, 0, 0.1);
+        }
+
+        .tabs .tab a:focus.active {
+            background-color: rgba(0, 255, 0, 0.1);
+        }
+
+        .tabs .indicator {
+            background-color: indigo;
+        }
     </style>
 </head>
 
@@ -109,6 +133,7 @@
                 <i class="material-icons right ">brightness_4</i>
             </a>
         </li>
+        <li><a href="/" title="Home">Home</a></li>
         <li><a href="../pages/aboutus.html">About Us</a></li>
         <li><a href="../pages/ministeries.html">Ministries</a></li>
         <li><a href="../pages/event.html">Events</a></li>
@@ -169,10 +194,17 @@
             <div id="help" class="modal">
                 <div class="modal-content indigo-text">
                     <h4>How to fill the Prayer request form </h4>
-                    <p>such as NAME, EMAILID,PHONE NUMBER, GENDER , PRAYER TOPIC and most important is your prayer
-                        request</p>
+                    <p>Must fill the cells such as <b>NAME, EMAILID,PHONE NUMBER </b>and most important is your <b>PRAYER REQUEST</b></p>
                     <p>Our Spiritual Support Team would love to pray for you this week! Please complete the form
                         below to submit your prayer request.</p>
+                        <p><blockquote>Must Note: Check which form you are filling it</blockquote><b>
+                            there are 3 forms
+                            <ul>
+                                <li>Default : prayer for any days</li>
+                                <li>Friday : Prayers for only Friday meet attend</li>
+                                <li>Sunday : Prayers for only Sunday meet attend</li>
+                            </ul>
+                        </b></p>
                 </div>
                 <div class="modal-footer">
                     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok Understand</a>
