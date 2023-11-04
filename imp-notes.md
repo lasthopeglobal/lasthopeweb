@@ -9,6 +9,7 @@ form materialize color set used colors
 #616161 grey darken-2
 
 
+#FBC02D
 ## Extras colors
 #0091ea light-blue accent-4
 #9575cd deep-purple lighten-2
