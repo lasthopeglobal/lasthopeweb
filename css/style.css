@@ -157,6 +157,6 @@ blockquote {
     height: auto !important;
 } */
 
-img.responsive-img, video.responsive-video{
+img.circle{
     max-width: 85% !important;
-}
+} 
