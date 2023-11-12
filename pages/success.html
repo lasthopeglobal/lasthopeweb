@@ -7,6 +7,8 @@
     <title>Successfull Done</title>
     <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <!-- <link href="style.css" rel="stylesheet"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +18,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
     <!-- styles import -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- modal for share style  -->
+    <link rel="stylesheet" href="../css/modal-share.css">
     <!-- materialize icons, fontawesome -->
     <link type="text/css" href="../css/materialize.min.css" rel="stylesheet">
     <link type="text/css" href="../css/fontawesome.min.css" rel="stylesheet">
@@ -65,7 +69,7 @@
                     </li>
                     <li><a href="../pages/aboutus.html" class="black-text">About Us</a></li>
                     <li><a href="../pages/ministeries.html" class="black-text">Ministries</a></li>
-                  <li><a href="../pages/event.html" class="black-text">Events</a></li>
+                    <li><a href="../pages/event.html" class="black-text">Events</a></li>
                     <li><a href="../pages/prayer.html" class="black-text">Prayer</a></li>
                     <li><a href="../pages/donate.html" class="black-text">Donate</a></li>
                     <li><a href="#footer" class="black-text">Visit Us</a></li>
@@ -137,7 +141,7 @@
             <div class="col s12 center">
                 <a href="/" class="btn btn-medium  waves  indigo ">Back To Home
                     <i class="material-icons right">home</i></a>
-                <a href="#share" class="btn btn-medium  waves  indigo modal-trigger">Share the Word of God
+                <a href="#share" class="btn btn-medium  waves  indigo modal-trigger ">Share the Word of God
                     <i class="material-icons right">share</i></a>
             </div>
             <!-- encourge for testimonys -->
@@ -151,101 +155,91 @@
 
     <!-- subscribe to your email  -->
     <div class="blue lighten-4">
-    <section class="container center-on-small-only">
-        <div class="row">
-            <div class="col s12 m3">
-                <h6 class=" left-align"
-                    style="text-transform: uppercase; font-weight: bold; letter-spacing: 5px; font-size: larger;">
-                    Subscribe</h6>
-                <p class=" left-align"
-                    style="text-transform: capitalize; font-weight: 300; font-style: italic; font-size: 16px; letter-spacing: 2px">
-                    to our newsletter</p>
-            </div>
-            <form id="emailForm">
-                <div class="input-field col s12 m5 ">
-                    <i class="material-icons prefix">email</i>
-                    <input type="email" name="emails" id="emails" placeholder="Enter your email" required>
+        <section class="container center-on-small-only">
+            <div class="row">
+                <div class="col s12 m3">
+                    <h6 class=" left-align"
+                        style="text-transform: uppercase; font-weight: bold; letter-spacing: 5px; font-size: larger;">
+                        Subscribe</h6>
+                    <p class=" left-align"
+                        style="text-transform: capitalize; font-weight: 300; font-style: italic; font-size: 16px; letter-spacing: 2px">
+                        to our newsletter</p>
                 </div>
-                <div class="col s12 m2">
-                    <div class="right-align center" style="padding: 2rem;">
-                        <button class="btn btn-medium  btn-wages indigo" type="submit">Subscribe</button>
+                <form id="emailForm">
+                    <div class="input-field col s12 m5 ">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" name="emails" id="emails" placeholder="Enter your email" required>
                     </div>
-                </div>
-            </form>
-        </div>
-    </section>
-</div>
+                    <div class="col s12 m2">
+                        <div class="right-align center" style="padding: 2rem;">
+                            <button class="btn btn-medium  btn-wages indigo" type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
 
 
 
     <!-- * modal for share  -->
     <!-- Modal Structure for sharing page -->
-    <div id="share" class="modal bottom-sheet">
-        <div class="modal-content">
-            <h5>Share The Word of God</h5>
-            <!-- <p>Via <a href="https://simplesharebuttons.com/html-share-buttons/" target="_blank">simplesharebuttons.com</a></p> -->
+    <!-- <div id="share" class="modal popup-sheet"> -->
+    <!-- <div id="share" class="modal bottom-sheet"> -->
+    <!-- <div class="modal-content">
+            <h5>Share The Word of God</h5> -->
+    <!-- <p>Via <a href="https://simplesharebuttons.com/html-share-buttons/" target="_blank">simplesharebuttons.com</a></p> -->
 
-            <!-- ! must change all the href links from materializecss to main chruch site url -->
-            <div id="share-buttons">
-
-                <!-- Facebook -->
-                <a href="http://www.facebook.com/sharer.php?u=https://mrparuiweb.live" target="_blank">
-                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-                </a>
-                <!-- instagram  -->
-                <a href="http://www.instagram.com/sharer.php?u=https://mrparuiweb.live" target="_blank">
-					<img src="https://simplesharebuttons.com/images/somacro/instagram.png" alt="Instagram" />
-                    <!-- <i class="bi bi-instagram"></i> -->
-			</a>
-
-                <!-- Twitter -->
-                <a href="https://twitter.com/share?url=https://mrparuiweb.live"
-                    target="_blank">
-                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-                </a>
-                <!-- Pinterest -->
-                <a
-                    href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">
-                    <img src="https://simplesharebuttons.com/images/somacro/pinterest.png" alt="Pinterest" />
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://mrparuiweb.live"
-                    target="_blank">
-                    <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
-                </a>
-                <!-- Email -->
-                <a
-                    href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://mrparuiweb.live">
-                    <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
-                </a>
-
-                <!-- Print -->
-                <a href="javascript:;" onclick="window.print()">
-                    <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
-                </a>
-
-                <!-- Reddit -->
-                <!-- <a href="http://reddit.com/submit?url=https://mrparuiweb.live&amp;title=Materialize Framework"
-                    target="_blank">
-                    <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
-                </a> -->
-
-
-                <!-- Tumblr-->
-                <!-- <a href="http://www.tumblr.com/share/link?url=https://mrparuiweb.live&amp;title=Materialize Framework"
-                    target="_blank">
-                    <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
-                </a> -->
+    <!-- ! must change all the href links from materializecss to main chruch site url -->
+    <!-- <div id="share-buttons">
+                <div class="content">
+                    <ul class="icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </ul>
+                    <p>Or copy link</p>
+                    <div class="field">
+                        <i class="url-icon uil uil-link"></i>
+                        <input type="text" readonly value="https://lasthopeglobal.netlify.app/">
+                        <button>Copy</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
         </div>
+    </div> -->
+
+    <!-- * modal for share new version  -->
+    <div id="share">
+        <div class="popup">
+            <header>
+                <h5>Share The Word of God</h5> 
+                <div class="close"><i class="uil uil-times"></i></div>
+            </header>
+            <div class="content">
+                <p>Share this link via</p>
+                <ul class="icons">
+                    <a href="http://www.facebook.com/sharer.php?u=https://lasthopeglobal.netlify.app/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a  href="https://twitter.com/share?url=https://lasthopeglobal.netlify.app/"
+                    target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.instagram.com/sharer.php?u=https://lasthopeglobal.netlify.app/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </ul>
+                <p>Or copy the below link</p>
+                <div class="field">
+                    <i class="url-icon uil uil-link"></i>
+                    <input type="text" readonly value="https://lasthopeglobal.netlify.app/">
+                    <button>Copy</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
 
     <!-- footer starts here  -->
 
@@ -317,6 +311,37 @@
         </div>
     </footer>
     <!-- footer ends here  -->
+
+    <!-- modal for share  script -->
+
+    <script>
+        const viewBtn = document.querySelector(".modal-trigger"),
+            popup = document.querySelector(".popup"),
+            close = popup.querySelector(".close"),
+            field = popup.querySelector(".field"),
+            input = field.querySelector("input"),
+            copy = field.querySelector("button");
+
+        viewBtn.onclick = () => {
+            popup.classList.toggle("show");
+        }
+        close.onclick = () => {
+            viewBtn.click();
+        }
+
+        copy.onclick = () => {
+            input.select(); //select input value
+            if (document.execCommand("copy")) { //if the selected text copy
+                field.classList.add("active");
+                copy.innerText = "Copied";
+                setTimeout(() => {
+                    window.getSelection().removeAllRanges(); //remove selection from document
+                    field.classList.remove("active");
+                    copy.innerText = "Copy";
+                }, 3000);
+            }
+        }
+    </script>
 
     <!-- email newsletter confirmation script  -->
     <script src="https://unpkg.com/@supabase/supabase-js"></script>

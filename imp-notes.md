@@ -469,6 +469,24 @@ for (var v = 0 ; v < todos.length ; v++){
         </div>
     </footer>
 
+
+
+    <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u=https://mrparuiweb.live" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+                <!-- instagram  -->
+                <a href="http://www.instagram.com/sharer.php?u=https://lasthopeglobal.netlify.app/" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/instagram.png" alt="Instagram" />
+                    <!-- <i class="bi bi-instagram"></i> -->
+			</a>
+
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=https://lasthopeglobal.netlify.app/"
+                    target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
+
 [link of zoom meeting](https://us02web.zoom.us/j/5181925148?pwd=NGlvRCtSKytNaW15eGpQYWRCUXhoZz09)
 
 create table
