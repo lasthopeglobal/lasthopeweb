@@ -2,7 +2,11 @@
 let { createClientSun } = supabase
 
 // just add the keys 
-supabase = createClient("https://uryjsoflpaycebbdoijr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyeWpzb2ZscGF5Y2ViYmRvaWpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg5MDM4ODAsImV4cCI6MTk5NDQ3OTg4MH0.7SMduIi9AHCtV_FE1JYwLmw4XpmL6c49RvapSfh2qPE")
+// * church db in supabase
+supabase = createClient("https://noovhkobgulmzyahvsgi.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5vb3Zoa29iZ3VsbXp5YWh2c2dpIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzkyMjAxMTcsImV4cCI6MTk5NDc5NjExN30.zehc-cUJVTWoYoUommxQNDyz7baJnrwjeSsLCy1r_rY")
+
+// * personal db in supabase
+// supabase = createClient("https://uryjsoflpaycebbdoijr.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyeWpzb2ZscGF5Y2ViYmRvaWpyIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg5MDM4ODAsImV4cCI6MTk5NDQ3OTg4MH0.7SMduIi9AHCtV_FE1JYwLmw4XpmL6c49RvapSfh2qPE")
 
 let formSun = document.querySelector("#prayerreq_sunday")
 

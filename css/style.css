@@ -134,29 +134,23 @@ blockquote {
 }
 
 /* rounded bootom modal in done page css  */
-.modal.modal.bottom-sheet {
+/* .modal.modal.bottom-sheet {
     max-height: initial;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
-}
+} */
 
-#share-buttons img {
-	width: 48px;
-	padding: 5px;
-	border: 0;
-	box-shadow: 0;
-	display: inline;
-}
+
 
 
 .parallax-container {
-    height: "600px";
+    height: "1200px";
 }
 /* .slider .slides li img{
     max-width: 100% !important;
     height: auto !important;
 } */
 
-img.responsive-img, video.responsive-video{
+img.circle{
     max-width: 85% !important;
-}
+} 

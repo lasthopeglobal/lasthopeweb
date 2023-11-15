@@ -463,11 +463,29 @@ for (var v = 0 ; v < todos.length ; v++){
             <div class="container center black-text">
                 Copyright © 2022 <a href="#" class="purple-text"><u>Last Hope Church</u></a> &nbsp;
                 Created with <i class="material-icons red-text" style="font-size:15px ;">favorite</i> by <a
-                    class="purple-text" href="https://www.mrparuiweb.dev" target="_blank" rel="dofollow">Mr Parui
+                    class="purple-text" href="https://pratapparui.me/" target="_blank" rel="dofollow">Mr Parui
                     Web</a>
             </div>
         </div>
     </footer>
+
+
+
+    <!-- Facebook -->
+                <a href="http://www.facebook.com/sharer.php?u=https://mrparuiweb.live" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+                <!-- instagram  -->
+                <a href="http://www.instagram.com/sharer.php?u=https://lasthopeglobal.netlify.app/" target="_blank">
+					<img src="https://simplesharebuttons.com/images/somacro/instagram.png" alt="Instagram" />
+                    <!-- <i class="bi bi-instagram"></i> -->
+			</a>
+
+                <!-- Twitter -->
+                <a href="https://twitter.com/share?url=https://lasthopeglobal.netlify.app/"
+                    target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                </a>
 
 [link of zoom meeting](https://us02web.zoom.us/j/5181925148?pwd=NGlvRCtSKytNaW15eGpQYWRCUXhoZz09)
 
