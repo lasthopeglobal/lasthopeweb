@@ -417,7 +417,7 @@ for (var v = 0 ; v < todos.length ; v++){
                 <div class="col l3 s12">
                     <h5 class="black-text">Quick Links</h5>
                     <ul>
-                        <li><a class="blue-text" href="/pages/prayer.html">Prayer Request Form</a></li>
+                        <li><a class="blue-text" href="/pages/prayer.html">New Comer Form</a></li>
                         <hr>
                         <li><a class="blue-text" href="#">Support Us</a></li>
                         <hr>

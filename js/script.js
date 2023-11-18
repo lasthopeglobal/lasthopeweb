@@ -101,7 +101,6 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 
-
 // google translate 
 
 function googleTranslateElementInit() {

@@ -53,12 +53,10 @@
           </li>
           <!-- darkmode button  -->
           <li>
-            <a href="#" class="btn  btn-wages indigo"
-              onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-              title="Dark/light">Dark mode
-              <i class="material-icons right">dark_mode</i>
+            <a href="#" class="btn  btn-wages indigo light-dark-mode">Dark mode
+                <i class="material-icons right ">brightness_4</i>
             </a>
-          </li>
+        </li>
         </ul>
         <!-- dropdown menus -->
         <ul id="more-options" class="dropdown-content">
@@ -74,12 +72,10 @@
   <ul class="sidenav" id="mobile-demo">
     <!-- darkmode button  -->
     <li>
-      <a href="#" class="btn  btn-wages indigo"
-        onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')"
-        title="Dark/light">Dark mode
-        <i class="material-icons right">dark_mode</i>
+      <a href="#" class="btn  btn-wages indigo light-dark-mode">Dark mode
+          <i class="material-icons right ">brightness_4</i>
       </a>
-    </li>
+  </li>
     <li><a href="/" title="Home">Home</a></li>
     <li><a href="/pages/aboutus.html">About Us</a></li>
     <li><a href="/index.html#ministeries">Ministries</a></li>
@@ -100,15 +96,33 @@
       <h2 class="red-text">
         404 ERROR
       </h2>
-      <h5 class="indigo-text">
+       <!-- verse of the day  -->
+
+    <section class="container">
+      <div class="row">
+          <h4 class="center">Bible Verse Of The Day for You </h4>
+          <div class="col s12">
+              <div class="card z-depth-2">
+                  <div class="card-content blue-text text-darken-2">
+                      <!-- also see the end of the file for script linked  -->
+                      <div id="the-bible-life-verse-of-the-day"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+      <!-- <h5 class="indigo-text">
         Lorem ipsum dolor sit.
       </h5>
       <p class="blue-text">
         Lorem ipsum dolor sit.
-      </p>
-      <div class="btn btn-wages indigo">
+      </p> -->
+      <div class="btn btn-wages indigo disabled">
         Click here for Bible Verse
-      </div><br><br>
+      </div><br>
+      <div class="center grey-text">(coming soon)</div>
+      <br>
       <a href="/" class="btn btn-wages indigo">
         Go to Home
       </a>
@@ -150,9 +164,9 @@
           <ul>
             <li><a class="blue-text" href="/pages/prayer.html">Prayer Request Form</a></li>
             <hr>
-            <li><a class="blue-text" href="#">Support Us</a></li>
+            <li><a class="blue-text" target="_blank" href="/index.html#support">Support Us</a></li>
             <hr>
-            <li><a class="blue-text" href="#">Write Testimony</a></li>
+            <li><a class="blue-text" href="/pages/testimonyform.html">Write Testimony</a></li>
             <hr>
             <li><a class="blue-text" href="#">Our Vision & Minisions</a></li>
             <hr>
@@ -202,6 +216,21 @@
   <script src="/js/materialize.min.js"></script>
   <!-- custom js files  -->
   <script src="/js/script.js"></script>
+
+    <!-- for auto genrated bible verse -->
+    <script src="https://thebible.life/js/widgets/verseoftheday.js" async></script>
+    <script>
+        window.onload = function () { tb_verse_of_the_day("jesus-is-lord", "callbackwidget1"); };
+    </script>
+
+<!--  Put this script in your 404.html page -->
+<script>
+  setTimeout(function () {
+    window.location.href = "/";
+  }, 7000); // Redirect to home page after 5 seconds
+</script>
+
+
   <!-- google translate init  -->
   <script type="text/javascript"
     src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
